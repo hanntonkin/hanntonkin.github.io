@@ -1,0 +1,23 @@
+---
+layout: default
+title: "Hai-Nguyen Nguyen: notes"
+nav_item: notes   
+nav_item_writing: popular 
+header_title: Popular posts
+include_header: header-h1.html
+include_comments:
+  count: true
+---
+
+<div class="mt2 h5 gray right-align pr2">
+  {% for nav in site.nav.notes %}
+    <a href="{{ nav[1] }}" class="gray{% if nav[0] == page.nav_item_writing %} link-color{% endif %}">{{ nav[0] }}</a>
+    {% unless forloop.last %}<span class="px1">|</span>{% endunless %}
+  {% endfor %}    
+</div>
+
+{% for post in site.posts %}
+  {% if post.add_to_popular_list %}  
+    {% include post-outline.html post=post %}
+  {% endif %}
+{% endfor %}

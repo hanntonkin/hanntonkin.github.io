@@ -1,0 +1,65 @@
+# Website settings
+baseurl: "/"
+url: "http://hann.work"
+
+# Internal nav
+nav:
+  main:
+    cv: "/assets/doc/HannCV.pdf"
+    research: "/research"
+    events: "/events"
+    notes: "/notes"
+  notes:
+    all: "/notes"
+    popular: "/notes/popular"
+    tags: "/notes/tags"
+    rss: "/feed.xml"
+
+# Bio settings
+name: "Hann"
+fullname: "Hai-Nguyen Nguyen"
+slogan: "Work-in-progress roboticist"
+description: "Hann Nguyen, Research Associate at Imperial College London"
+thumbnail_path: "nguyen.jpg"
+snu: "https://www.imperial.ac.uk/"
+imech: "http://www.imech.ac.vn/"
+vast: "http://www.vast.ac.vn/en/"
+
+# ID
+disqus: hainguyen
+ORCID: 0000-0002-2850-1304
+google_analytics_id: UA-70444178-1
+
+# URLs
+contact_urls:
+  home: 
+    url: "https://www.imperial.ac.uk/aerial-robotics"
+    label: "Homepage"
+    icon: "home"  
+  linkedin: 
+    url: "https://www.linkedin.com/in/nguyenhainguyen"
+    label: "LinkedIn"
+    icon: "linkedin-square"
+  email: 
+    url: "mailto:hann@ieee.org"
+    label: "Email"
+    value: "hainguyen@snu.ac.kr"
+    icon: "envelope-square"
+
+
+
+# Jekyll build settings
+paginate: 10
+paginate_path: "/notes/page:num"
+permalink: "/notes/:year/:month/:day/:title/"
+sass:
+  sass_dir: "/assets/css"
+  style: :compressed
+highlighter: rouge
+timezone: 'Asia/Seoul'
+
+# Plugins (GitHub Pages only support a few)
+gems:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-paginate

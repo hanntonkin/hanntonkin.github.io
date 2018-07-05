@@ -1,0 +1,99 @@
+- name: "Spherically-connected multi-Quadrotor Platform (SmQ)"
+  longname: "Spherically-connected multi-Quadrotor Platform"
+  date: "November 7, 2015"
+  description: |
+      SmQ platform is a new platform for aerial manipulation, 
+        which consists of a tool (or frame) with multiple quadrotors 
+        connected to that by spherical joints, acting as distributed rotating thrust generators. 
+        Lyapunov control design is performed while taking into account the spherical joint limits 
+        in a form of real-time constrained optimization. 
+  embed_url: "https://www.youtube.com/embed/v9NVUoCRyBY"
+  publications:
+    - title: "A novel robotic platform for aerial manipulation using Quadrotors as Rotating Thrust Generators"
+      author: "Hai-Nguyen Nguyen, Sangyul Park, Junyoung Park, Dongjun Lee"
+      journal: "IEEE Transactions on Robotics"
+      url: "https://ieeexplore.ieee.org/document/8294249/"
+      volume: "34(2)"
+      page: "353-369"
+      year: "2018"
+      note: "IF: 4.264, SJR: 100/6810 in Engineering"
+      links:
+      - label: "S3Q-Platform"
+        url: "https://youtu.be/lAYUR7LpDEU"
+      - label: "S2Q-Platform"
+        url: "https://youtu.be/aCM8TvtNmt4"
+      - label: "featured in IEEE Spectrum"
+        url: "http://spectrum.ieee.org/automaton/robotics/robotics-hardware/video-friday-081117"
+      - label: "in Interesting Engineering"
+        url: "https://www.facebook.com/interestingengineering/videos/1631800596889638/?hc_ref=ARTDsfkuJ7S9B_VOdmw3brb5igaU7TsMIWDjA7dc4VSuq_Feu7E9oRFN_axzCSn8id8&pnref=story"
+      
+    - title: "Aerial Tool Operation System using Quadrotors as Rotating Thrust Generators"
+      author: "Hai-Nguyen Nguyen, Sangyul Park, Dongjun Lee"
+      conference: "IROS"
+      page: "1285-1291"
+      year: "2015"
+      links:
+      - label: "manuscript"
+        url: "/assets/doc/NPL_IROS15.pdf"
+      - label: "slides"
+        url: "/assets/doc/NPL_IROS15_slides.pdf"
+      - label: "video"
+        url: "https://www.youtube.com/watch?v=-XWvWEyg7F0"
+      - label: "featured in IEEE Spectrum"
+        url: "http://spectrum.ieee.org/automaton/robotics/robotics-hardware/video-friday-iros-2015"    
+- name: "Quadrotor-Tool System (QT)"
+  longname: "Quadrotor-Tool System"
+  date: "November 7, 2015"
+  description: |
+    We propose a novel control framework 
+    to enable a quadrotor to operate a tool attached on it.  
+    We fully characterize the internal dynamics of the spatial quadrotor tool operation, 
+    which arises due to the quadrotor’s under-actuation, and elucidate a 
+    seemingly counter-intuitive necessary condition for the internal stability, 
+    that is, the tool-tip should be located above the quadrotor’s center-of-mass. 
+    We further manifest that this internal dynamics can exhibit finite-time escape 
+    and propose a stabilizing action to prevent that. 
+  embed_url: "//www.youtube.com/embed/WmvTshEaiwA"
+  publications:
+    - title: "Mechanics, control and internal dynamics of quadrotor tool operation"
+      author: "Hai-Nguyen Nguyen, Chansu Ha, Dongjun Lee"
+      journal: "Automatica"
+      url: "http://www.sciencedirect.com/science/article/pii/S0005109815003416"
+      volume: "61"
+      page: "289-301"
+      year: "2015"
+      note: "IF: 6.126, SJR: 20/6810 in Engineering"
+      abstract: |
+        We propose a novel control framework to enable a quadrotor to
+         operate a tool attached on it. We first show that
+          any Cartesian control at the tool-tip can be generated 
+          if and only if the tool-tip is located strictly above 
+          or below the quadrotor’s center-of-mass. We then fully
+           characterize the internal dynamics of the spatial quadrotor
+            tool operation, which arises due to the quadrotor’s under-actuation
+            , and elucidate a seemingly counter-intuitive necessary 
+            condition for the internal stability, that is, 
+        the tool-tip should be located above the quadrotor’s 
+        center-of-mass. We further manifest that this internal
+        dynamics can exhibit finite-time escape and propose a 
+        stabilizing action to prevent that. The theory is then 
+        illustrated for the problems of rotating tool operation 
+        and hybrid force/position control with relevant simulation results.
+      links:
+      - label: "manuscript"
+        url: "/assets/doc/NHL_Auto15.pdf"
+      - label: "video 1"
+        url: "https://www.youtube.com/watch?v=WmvTshEaiwA"
+      - label: "video 2"
+        url: "https://www.youtube.com/watch?v=gfD-81vG8UA"
+    - title: "Hybrid force/motion control and internal dynamics of quadrotors for tool operation"
+      author: "Hai-Nguyen Nguyen, Dongjun Lee"
+      conference: "IROS"
+      url: "http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6696849"
+      page: "289-301"
+      year: "2013"
+      links:
+      - label: "manuscript"
+        url: "/assets/doc/NL_IROS13.pdf"
+      - label: "slides"
+        url: "/assets/doc/NL_IROS13_slides.pdf"
