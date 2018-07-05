@@ -11,7 +11,7 @@ tags:
 thumbnail_path: blog/robotics.jpg
 ---
 
-My collection of books on key subjects in Robotics and Controls.
+My collection of books on key subjects in Robotics, Controls and AI.
 
 
 **Robot Mechanics**
