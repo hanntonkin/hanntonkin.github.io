@@ -19,9 +19,11 @@ nav:
 name: "Hann"
 fullname: "Hai-Nguyen Nguyen"
 slogan: "Work-in-progress roboticist"
-description: "Hann Nguyen, Research Associate at Imperial College London"
+description: "Hai-Nguyen (Hann) Nguyen, Research Associate at Imperial College London"
 thumbnail_path: "nguyen.jpg"
-snu: "https://www.imperial.ac.uk/"
+lab: "https://www.imperial.ac.uk/aerial-robotics/"
+snu: "http://en.snu.ac.kr/"
+imperial: "https://www.imperial.ac.uk/"
 imech: "http://www.imech.ac.vn/"
 vast: "http://www.vast.ac.vn/en/"
 
