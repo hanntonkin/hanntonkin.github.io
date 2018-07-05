@@ -49,3 +49,6 @@ My collection of books on key subjects in Robotics, Controls and AI.
 [Artificial Intelligence: A Modern Approach](http://aima.cs.berkeley.edu/) - P. Norvig & S. J. Russell.
 
 [Deep Learning](http://www.deeplearningbook.org/) - I. Goodfellow, Y. Bengio, & A. Courville.
+
+**Bio-Inspired Robotics**
+[Bio-Inspired Artificial Intelligence](http://www.dschool.ir/files/__Bio_Inspired_Artificial_Intelligence__Theories__Methods__and_Technologies__Intelligent_Robotics_and_Autonomous_Agents_.pdf) - D. Floreano & C. Mattiussi.
