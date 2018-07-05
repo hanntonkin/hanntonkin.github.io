@@ -26,7 +26,7 @@ My collection of books on key subjects in Robotics and Controls.
 
 [Linear System Theory and Design](https://dl.acm.org/citation.cfm?id=521603) - 	C.-T. Chen.
 
-[Nonlinear Systems](https://www.amazon.com/Nonlinear-Systems-3rd-Hassan-Khalil/dp/0130673897) - . K. Khalil.
+[Nonlinear Systems](https://www.amazon.com/Nonlinear-Systems-3rd-Hassan-Khalil/dp/0130673897) - H. K. Khalil.
 
 [Applied Nonlinear Control](https://www.amazon.co.uk/Applied-Nonlinear-Control-J-Slotine/dp/0130408905) - J-J. E. Slotine & W. Li.
 
