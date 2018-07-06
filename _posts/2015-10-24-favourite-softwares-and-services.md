@@ -8,7 +8,6 @@ redirect_from: /2015/10/24/favourite-softwares-and-services/
 readlater: true
 tags:
 - Tools & Services
-add_to_popular_list: true
 thumbnail_path: blog/creativity/gears.jpg
 ---
 This post simply lists all of my favourite softwares and services.

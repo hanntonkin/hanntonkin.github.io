@@ -86,4 +86,4 @@ I will start with some online courses first (video lectures available).
 
 [Berkeley - Deep RL Bootcamp](https://sites.google.com/view/deep-rl-bootcamp/lectures) by Pieter Abbeel et. al, 2017.
 
-[Berkeley - Deep Reinforcement Learning](http://rail.eecs.berkeley.edu/deeprlcourse/index.html) by Sergey Levine - *Coming soon!!!*
+[Berkeley - Deep Reinforcement Learning](http://rail.eecs.berkeley.edu/deeprlcourse/index.html) by Sergey Levine, [2017](https://www.youtube.com/playlist?list=PLkFD6_40KJIwTmSbCv9OVJB3YaO4sFwkX) - *Coming soon!!!*
