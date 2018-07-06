@@ -8,6 +8,7 @@ redirect_from: /2018/6/23/learn-robotics-online/
 readlater: true
 tags: 
 - robotics
+add_to_popular_list: true
 thumbnail_path: blog/learn_robotics.jpg
 ---
 
@@ -20,6 +21,9 @@ I will start with some online courses first (video lectures available).
 
 [MIT - Linear Algebra](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/index.htm) by Gilbert Strang is a good starting class.
 
+[Khan - Differential Equations](https://www.khanacademy.org/math/differential-equations)
+
+
 [Harvard - Probability](https://projects.iq.harvard.edu/stat110/home) by Joe Blitzstein. 
 
 [HMC - Real Analysis](http://analysisyawp.blogspot.com/) by Francis Su.
@@ -31,6 +35,12 @@ I will start with some online courses first (video lectures available).
 
 
 [Stanford - Machine Learning](https://www.coursera.org/learn/machine-learning) by Andrew Ng.
+
+**Basics**
+
+[Stanford - Numpy](http://cs231n.github.io/python-numpy-tutorial/) by Justin Johnson.
+
+[Umich - Control with matlab](http://ctms.engin.umich.edu/CTMS/index.php?example=Introduction&section=ControlFrequency)
 
 **Robot Mechanics**
 
@@ -57,9 +67,6 @@ I will start with some online courses first (video lectures available).
 **Artificial Intelligence**
 
 [Fast.ai - Deep Learning for Coders](http://course.fast.ai/) by Jeremy Howard and Rachel Thomas.
-
-
-
 
 [UCL - Reinforcement Learning](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html) by David Silver, 2015.
 
