@@ -72,6 +72,8 @@ I will start with some online courses first (video lectures available).
 
 [MIT - Underactuated](http://underactuated.csail.mit.edu/Spring2018/) by Russ Tedrake, 2018.
 
+
+[Tsinghua - Dynamic Programming](https://www.youtube.com/watch?v=6CaUxbFX8Oc&list=PLiCLbsFQNFAxOmVeqPhI5er1LGf2-L9I4) by Dimitri P. Bertsekas.
 **Artificial Intelligence**
 
 [Fast.ai - Deep Learning for Coders](http://course.fast.ai/) by Jeremy Howard and Rachel Thomas.
