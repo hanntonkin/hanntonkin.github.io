@@ -42,6 +42,8 @@ I will start with some online courses first (video lectures available).
 
 [Umich - Control with matlab](http://ctms.engin.umich.edu/CTMS/index.php?example=Introduction&section=ControlFrequency)
 
+[ROS tutorials](http://wiki.ros.org/ROS/Tutorials)
+
 **Robot Mechanics**
 
 [SNU - Robot Mechanics and Control](https://www.edx.org/bio/frank-c-park) by Frank C. Park (EiC of T-RO). 
@@ -57,6 +59,12 @@ I will start with some online courses first (video lectures available).
 [MIT - Nonlinear Systems](http://web.mit.edu/nsl/www/videos/lectures.html) by Jean-Jacques Slotine.
 
 [SNU - Nonlinear System Theory](http://lecture.cdsl.kr/nst2011) by Hyungbo Shim.
+
+
+**Motion Planning**
+
+[NTU - Open-Source Robotics](http://osrobotics.org/pages/introduction_osr.html) by Quang-Cuong Pham and Francisco Suárez-Ruiz.
+
 
 **Optimal Control**
 
