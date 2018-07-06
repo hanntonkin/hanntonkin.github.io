@@ -2,17 +2,27 @@
 layout: post
 title: "Bibles in Robotics"
 location: Hanoi, Vietnam
-excerpt: My collection of books on key subjects in Robotics and Controls.
+excerpt: Book collection on key subjects in Robotics.
 update_date: 2018-3-10
 redirect_from: /2018/3/10/bible-in-robotics/
 readlater: true
 tags: 
 - robotics
-thumbnail_path: blog/robotics.jpg
+thumbnail_path: blog/robotics.png
 ---
 
 My collection of books on key subjects in Robotics, Controls and AI.
 
+
+**Basics**
+
+[Introduction to Linear Algebra](http://math.mit.edu/~gs/linearalgebra/) - G. Strang.
+
+[Introduction to Probability](https://www.amazon.com/gp/product/1466575573/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1466575573&linkCode=as2) - J. K. Blitzstein & J. Hwang.
+
+[Linear System Theory and Design](https://dl.acm.org/citation.cfm?id=521603) - 	C.-T. Chen.
+
+[Convex Optimization](http://web.stanford.edu/~boyd/cvxbook/) - S. Boyd & L. Vandenberghe.
 
 **Robot Mechanics**
 
@@ -24,7 +34,6 @@ My collection of books on key subjects in Robotics, Controls and AI.
 
 **Systems and Controls**
 
-[Linear System Theory and Design](https://dl.acm.org/citation.cfm?id=521603) - 	C.-T. Chen.
 
 [Nonlinear Systems](https://www.amazon.com/Nonlinear-Systems-3rd-Hassan-Khalil/dp/0130673897) - H. K. Khalil.
 
@@ -32,13 +41,11 @@ My collection of books on key subjects in Robotics, Controls and AI.
 
 **Probabilistic Robotics**
 
-[Introduction to Probability](https://www.amazon.com/gp/product/1466575573/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1466575573&linkCode=as2) - J. K. Blitzstein & J. Hwang.
 
 [Probabilistic Robotics](https://docs.ufpr.br/~danielsantos/ProbabilisticRobotics.pdf) - S. Thrun, W. Burgard, & D. Fox.
 
-**Optimization & Optimal Control**
+**Optimal Control**
 
-[Convex Optimization](http://web.stanford.edu/~boyd/cvxbook/) - S. Boyd & L. Vandenberghe.
 
 [Practical Methods for Optimal Control & Estimation Using NP](https://epubs.siam.org/doi/book/10.1137/1.9780898718577) - J. T. Betts.
 
