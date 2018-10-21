@@ -35,6 +35,11 @@ I will start with some online courses first (video lectures available).
 
 
 [Stanford - Machine Learning](https://www.coursera.org/learn/machine-learning) by Andrew Ng.
+[MIT - Artifical Intelligence](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-034-artificial-intelligence-fall-2010/) by Patrick Henry Winston.
+
+[MIT - Introduction to Algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm) by  Erik Demaine and Srini Devadas.
+
+
 
 **Basics**
 
@@ -77,15 +82,18 @@ I will start with some online courses first (video lectures available).
 
 
 **Artificial Intelligence**
+[MIT - Deep Learning for Self-Driving Cars](https://selfdrivingcars.mit.edu/) by Lex Fridman, 2018.
+
+[Stanford - CNN for Visual Recognition](http://cs231n.stanford.edu/index.html) by Fei-Fei Li and her students.
 
 [Fast.ai - Deep Learning for Coders](http://course.fast.ai/) by Jeremy Howard and Rachel Thomas.
 
 [UCL - Reinforcement Learning](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html) by David Silver, 2015.
 
-[MIT - Deep Learning for Self-Driving Cars](https://selfdrivingcars.mit.edu/) by Lex Fridman, 2018.
+[Berkeley - Deep Reinforcement Learning](http://rail.eecs.berkeley.edu/deeprlcourse/index.html) by Sergey Levine, 2018.
+
 
 [MIT - Artifical General Intelligence](https://agi.mit.edu/) by Lex Fridman, 2018.
 
 [Berkeley - Deep RL Bootcamp](https://sites.google.com/view/deep-rl-bootcamp/lectures) by Pieter Abbeel et. al, 2017.
 
-[Berkeley - Deep Reinforcement Learning](http://rail.eecs.berkeley.edu/deeprlcourse/index.html) by Sergey Levine, [2017](https://www.youtube.com/playlist?list=PLkFD6_40KJIwTmSbCv9OVJB3YaO4sFwkX) - *Coming soon!!!*

@@ -11,14 +11,6 @@ course
 
 ### Tools
 
-* coding *
-
-  [code editor](http://code.tutsplus.com/courses/perfect-workflow-in-sublime-text-2)
-
-  [markdown with sublime](http://plaintext-productivity.net/2-04-how-to-set-up-sublime-text-for-markdown-editing.html)
-
-  [latex with sublime]()
-
 * cheet sheets *
 
   [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
