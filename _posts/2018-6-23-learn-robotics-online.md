@@ -45,9 +45,9 @@ I will start with some online courses first (video lectures available).
 
 [Stanford - Numpy](http://cs231n.github.io/python-numpy-tutorial/) by Justin Johnson.
 
-[Umich - Control with matlab](http://ctms.engin.umich.edu/CTMS/index.php?example=Introduction&section=ControlFrequency)
+[Umich - Control with matlab](http://ctms.engin.umich.edu/CTMS/index.php?example=Introduction&section=ControlFrequency) by Bill Messner and Dawn Tilbury.
 
-[ROS tutorials](http://wiki.ros.org/ROS/Tutorials)
+[ETHZ - ROS](http://www.rsl.ethz.ch/education-students/lectures/ros.html) by Péter Fankhauser, Dominic Jud, Martin Wermelinger and Marco Hutter.
 
 **Robot Mechanics**
 
