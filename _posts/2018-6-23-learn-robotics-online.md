@@ -35,10 +35,10 @@ I will start with some online courses first (video lectures available).
 
 
 [Stanford - Machine Learning](https://www.coursera.org/learn/machine-learning) by Andrew Ng.
+
 [MIT - Artifical Intelligence](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-034-artificial-intelligence-fall-2010/) by Patrick Henry Winston.
 
 [MIT - Introduction to Algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm) by  Erik Demaine and Srini Devadas.
-
 
 
 **Basics**
@@ -82,6 +82,7 @@ I will start with some online courses first (video lectures available).
 
 
 **Artificial Intelligence**
+
 [MIT - Deep Learning for Self-Driving Cars](https://selfdrivingcars.mit.edu/) by Lex Fridman, 2018.
 
 [Stanford - CNN for Visual Recognition](http://cs231n.stanford.edu/index.html) by Fei-Fei Li and her students.
