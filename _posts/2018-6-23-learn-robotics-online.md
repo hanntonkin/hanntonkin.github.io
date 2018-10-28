@@ -31,14 +31,16 @@ I will start with some online courses first (video lectures available).
 
 [Stanford - Convex Optimization](http://web.stanford.edu/class/ee364a/) by Stephen Boyd.
 
+[Harvard - Introduction to Computer Science](http://cs50.tv/2017/fall/) by David J. Malan.
+
+[MIT - Introduction to Algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm) by  Erik Demaine and Srini Devadas.
+
 [Upenn - Robotics](https://www.coursera.org/specializations/robotics) by Vijay Kumar, CJ Taylor, Daniel E. Koditschek, Daniel Lee, Jianbo Shi, Kostas Daniilidis, Sid Deliwala.
 
 
 [Stanford - Machine Learning](https://www.coursera.org/learn/machine-learning) by Andrew Ng.
 
 [MIT - Artifical Intelligence](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-034-artificial-intelligence-fall-2010/) by Patrick Henry Winston.
-
-[MIT - Introduction to Algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm) by  Erik Demaine and Srini Devadas.
 
 
 **Basics**
