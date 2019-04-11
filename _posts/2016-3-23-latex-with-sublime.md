@@ -1,4 +1,4 @@
---- 
+---
 layout: post
 title: "Latex with Sublime in Mac"
 location: Seoul, Korea
@@ -6,7 +6,7 @@ excerpt: Simple guide on edit/build latex with sublime.
 update_date: 2016-3-23
 redirect_from: /2016/3/23/latex-with-sublime/
 readlater: true
-tags: 
+tags:
 - Latex
 - Mac
 - HOWTO
@@ -17,7 +17,7 @@ LaTex is a popular markup language for writing scientific documents. Sublime Tex
 
 **Installation**
 
-* Install [MacTeX](https://tug.org/mactex/). 
+* Install [MacTeX](https://tug.org/mactex/).
 * Install [Sublime Text](http://www.sublimetext.com/3).
 * Install [Package Control](https://packagecontrol.io/installation) in Sublime.
 * Install [LaTeX TOOLS]() using Package Control:
@@ -25,8 +25,9 @@ LaTex is a popular markup language for writing scientific documents. Sublime Tex
 2) Type "Install package" and find "LaTeX Tools".
 
 
-* Install Inverse Search with [Skim pdf viewer](http://skim-app.sourceforge.net). In Skim > Preferences > Sync: 
-1) Uncheck "Check for file changes" 
+* Install Inverse Search with [Skim pdf viewer](http://skim-app.sourceforge.net). In Skim > Preferences > Sync:
+1) Uncheck "Check for file changes"
 2) Preset to "Sublime text" (/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl for ST3)
 
+* Separate temporary files: set "output_directory" option with the value <<cache>>
 

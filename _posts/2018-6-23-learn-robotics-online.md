@@ -28,6 +28,7 @@ I will start with some online courses first (video lectures available).
 
 [HMC - Real Analysis](http://analysisyawp.blogspot.com/) by Francis Su.
 
+[CUHK - Information Theory](https://www.coursera.org/learn/information-theory/home/welcome) by Raymond W. Yeung.
 
 [Stanford - Convex Optimization](http://web.stanford.edu/class/ee364a/) by Stephen Boyd.
 
@@ -50,6 +51,7 @@ I will start with some online courses first (video lectures available).
 [Umich - Control with matlab](http://ctms.engin.umich.edu/CTMS/index.php?example=Introduction&section=ControlFrequency) by Bill Messner and Dawn Tilbury.
 
 [ETHZ - ROS](http://www.rsl.ethz.ch/education-students/lectures/ros.html) by Péter Fankhauser, Dominic Jud, Martin Wermelinger and Marco Hutter.
+
 
 **Robot Mechanics**
 
@@ -84,6 +86,8 @@ I will start with some online courses first (video lectures available).
 
 
 **Artificial Intelligence**
+
+[Cambridge - Information Theory, PR & NN](http://www.inference.org.uk/mackay/itprnn/Videos.shtml) by David MacKay.
 
 [MIT - Deep Learning for Self-Driving Cars](https://selfdrivingcars.mit.edu/) by Lex Fridman, 2018.
 
