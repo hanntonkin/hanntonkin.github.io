@@ -39,13 +39,13 @@ contact_urls:
     label: "Homepage"
     icon: "home"  
   linkedin: 
-    url: "https://www.linkedin.com/in/nguyenhainguyen"
+    url: "https://www.linkedin.com/in/hanntonkin"
     label: "LinkedIn"
     icon: "linkedin-square"
   email: 
     url: "mailto:hann@ieee.org"
     label: "Email"
-    value: "hainguyen@snu.ac.kr"
+    value: "hann@ieee.org"
     icon: "envelope-square"
 
 
