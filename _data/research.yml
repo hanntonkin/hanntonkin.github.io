@@ -1,3 +1,30 @@
+- name: "Aerial Inspection at Close Proximity"
+  longname: "Aerial Inspection at Close Proximity"
+  date: "November 7, 2015"
+  description: |
+      An autonomous quadrotor system equipped with a winch-tethered magnet 
+      that is capable of perching on and sliding along a vertical surface for inspection at close 
+      proximity. The first realization of a tethered quadrotor that can hover and perch vertically 
+      near infrastructure elements, enabling a variety of surface manipulation and repair tasks.
+  embed_url: "https://www.youtube.com/embed/NcGy41yxVtI"
+  publications:
+    - title: "Aerial inspection at close proximity: a multi-modal mobility approach"
+      author: "H. Nguyen, B. Stephens, M. Kovac"
+      conference: "ICRA"
+      year: "2019"
+      url: "http://hann.work/research/"
+      note: "Video Contribution"
+      links:
+      - label: "featured in Imperial College"
+        url: "https://www.imperial.ac.uk/news/189418/drones-work-alongside-humans-imperial-led-centre/"
+      - label: "in EMPA"
+        url: "https://www.youtube.com/watch?v=MlvN91TFKeU"
+    - title: "A passively adaptive microspine grapple for robust, controllable perching"
+      author: "H. Nguyen, R. Siddall, B. Stephens, A. Navarro-Rubio, M. Kovac"
+      conference: "RoboSoft"
+      url: "http://hann.work/research/"
+      year: "2019"
+
 - name: "Spherically-connected multi-Quadrotor Platform (SmQ)"
   longname: "Spherically-connected multi-Quadrotor Platform"
   date: "November 7, 2015"
@@ -9,8 +36,8 @@
         in a form of real-time constrained optimization. 
   embed_url: "https://www.youtube.com/embed/v9NVUoCRyBY"
   publications:
-    - title: "A novel robotic platform for aerial manipulation using Quadrotors as Rotating Thrust Generators"
-      author: "Hai-Nguyen Nguyen, Sangyul Park, Junyoung Park, Dongjun Lee"
+    - title: "A novel robotic platform for aerial manipulation using quadrotors as rotating thrust generators"
+      author: "H. Nguyen, S. Park, J. Park, D. J. Lee"
       journal: "IEEE Transactions on Robotics"
       url: "https://ieeexplore.ieee.org/document/8294249/"
       volume: "34(2)"
@@ -27,8 +54,8 @@
       - label: "in Interesting Engineering"
         url: "https://www.facebook.com/interestingengineering/videos/1631800596889638/?hc_ref=ARTDsfkuJ7S9B_VOdmw3brb5igaU7TsMIWDjA7dc4VSuq_Feu7E9oRFN_axzCSn8id8&pnref=story"
       
-    - title: "Aerial Tool Operation System using Quadrotors as Rotating Thrust Generators"
-      author: "Hai-Nguyen Nguyen, Sangyul Park, Dongjun Lee"
+    - title: "Aerial tool operation system using quadrotors as rotating thrust generators"
+      author: "H. Nguyen, S. Park, D. J. Lee"
       conference: "IROS"
       url: "https://ieeexplore.ieee.org/document/7353534/"
       page: "1285-1291"
@@ -41,7 +68,8 @@
       - label: "video"
         url: "https://www.youtube.com/watch?v=-XWvWEyg7F0"
       - label: "featured in IEEE Spectrum"
-        url: "http://spectrum.ieee.org/automaton/robotics/robotics-hardware/video-friday-iros-2015"    
+        url: "http://spectrum.ieee.org/automaton/robotics/robotics-hardware/video-friday-iros-2015"
+    
 - name: "Quadrotor-Tool System (QT)"
   longname: "Quadrotor-Tool System"
   date: "November 7, 2015"
@@ -57,7 +85,7 @@
   embed_url: "//www.youtube.com/embed/WmvTshEaiwA"
   publications:
     - title: "Mechanics, control and internal dynamics of quadrotor tool operation"
-      author: "Hai-Nguyen Nguyen, Chansu Ha, Dongjun Lee"
+      author: "H. Nguyen, C. Ha, D. J. Lee"
       journal: "Automatica"
       url: "http://www.sciencedirect.com/science/article/pii/S0005109815003416"
       volume: "61"
@@ -88,7 +116,7 @@
       - label: "video 2"
         url: "https://www.youtube.com/watch?v=gfD-81vG8UA"
     - title: "Hybrid force/motion control and internal dynamics of quadrotors for tool operation"
-      author: "Hai-Nguyen Nguyen, Dongjun Lee"
+      author: "H. Nguyen, D. J. Lee"
       conference: "IROS"
       url: "http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6696849"
       page: "289-301"
