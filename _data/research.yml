@@ -2,9 +2,9 @@
   longname: "Aerial Inspection at Close Proximity"
   date: "November 7, 2015"
   description: |
-      An autonomous quadrotor system equipped with a winch-tethered magnet 
-      that is capable of perching on and sliding along a vertical surface for inspection at close 
-      proximity. The first realization of a tethered quadrotor that can hover and perch vertically 
+      An autonomous quadrotor system equipped with a winch-tethered magnet
+      that is capable of perching on and sliding along a vertical surface for inspection at close
+      proximity. The first realization of a tethered quadrotor that can hover and perch vertically
       near infrastructure elements, enabling a variety of surface manipulation and repair tasks.
   embed_url: "https://www.youtube.com/embed/NcGy41yxVtI"
   publications:
@@ -15,10 +15,13 @@
       url: "http://hann.work/research/"
       note: "Video Contribution"
       links:
-      - label: "featured in Imperial College"
+      - label: "featured in Reuters TV"
+        url: "http://www.reuters.tv/v/PFXm/2019/04/24/drones-could-help-repair-buildings-of-the-future"
+      - label: "on Imperial College"
         url: "https://www.imperial.ac.uk/news/189418/drones-work-alongside-humans-imperial-led-centre/"
-      - label: "in EMPA"
+      - label: "on EMPA"
         url: "https://www.youtube.com/watch?v=MlvN91TFKeU"
+
     - title: "A passively adaptive microspine grapple for robust, controllable perching"
       author: "H. Nguyen, R. Siddall, B. Stephens, A. Navarro-Rubio, M. Kovac"
       conference: "RoboSoft"
@@ -29,11 +32,11 @@
   longname: "Spherically-connected multi-Quadrotor Platform"
   date: "November 7, 2015"
   description: |
-      SmQ platform is a new platform for aerial manipulation, 
-        which consists of a tool (or frame) with multiple quadrotors 
-        connected to that by spherical joints, acting as distributed rotating thrust generators. 
-        Lyapunov control design is performed while taking into account the spherical joint limits 
-        in a form of real-time constrained optimization. 
+      SmQ platform is a new platform for aerial manipulation,
+        which consists of a tool (or frame) with multiple quadrotors
+        connected to that by spherical joints, acting as distributed rotating thrust generators.
+        Lyapunov control design is performed while taking into account the spherical joint limits
+        in a form of real-time constrained optimization.
   embed_url: "https://www.youtube.com/embed/v9NVUoCRyBY"
   publications:
     - title: "A novel robotic platform for aerial manipulation using quadrotors as rotating thrust generators"
@@ -53,7 +56,7 @@
         url: "http://spectrum.ieee.org/automaton/robotics/robotics-hardware/video-friday-081117"
       - label: "in Interesting Engineering"
         url: "https://www.facebook.com/interestingengineering/videos/1631800596889638/?hc_ref=ARTDsfkuJ7S9B_VOdmw3brb5igaU7TsMIWDjA7dc4VSuq_Feu7E9oRFN_axzCSn8id8&pnref=story"
-      
+
     - title: "Aerial tool operation system using quadrotors as rotating thrust generators"
       author: "H. Nguyen, S. Park, D. J. Lee"
       conference: "IROS"
@@ -69,19 +72,19 @@
         url: "https://www.youtube.com/watch?v=-XWvWEyg7F0"
       - label: "featured in IEEE Spectrum"
         url: "http://spectrum.ieee.org/automaton/robotics/robotics-hardware/video-friday-iros-2015"
-    
+
 - name: "Quadrotor-Tool System (QT)"
   longname: "Quadrotor-Tool System"
   date: "November 7, 2015"
   description: |
-    We propose a novel control framework 
-    to enable a quadrotor to operate a tool attached on it.  
-    We fully characterize the internal dynamics of the spatial quadrotor tool operation, 
-    which arises due to the quadrotor’s under-actuation, and elucidate a 
-    seemingly counter-intuitive necessary condition for the internal stability, 
-    that is, the tool-tip should be located above the quadrotor’s center-of-mass. 
-    We further manifest that this internal dynamics can exhibit finite-time escape 
-    and propose a stabilizing action to prevent that. 
+    We propose a novel control framework
+    to enable a quadrotor to operate a tool attached on it.
+    We fully characterize the internal dynamics of the spatial quadrotor tool operation,
+    which arises due to the quadrotor’s under-actuation, and elucidate a
+    seemingly counter-intuitive necessary condition for the internal stability,
+    that is, the tool-tip should be located above the quadrotor’s center-of-mass.
+    We further manifest that this internal dynamics can exhibit finite-time escape
+    and propose a stabilizing action to prevent that.
   embed_url: "//www.youtube.com/embed/WmvTshEaiwA"
   publications:
     - title: "Mechanics, control and internal dynamics of quadrotor tool operation"
@@ -95,18 +98,18 @@
       abstract: |
         We propose a novel control framework to enable a quadrotor to
          operate a tool attached on it. We first show that
-          any Cartesian control at the tool-tip can be generated 
-          if and only if the tool-tip is located strictly above 
+          any Cartesian control at the tool-tip can be generated
+          if and only if the tool-tip is located strictly above
           or below the quadrotor’s center-of-mass. We then fully
            characterize the internal dynamics of the spatial quadrotor
             tool operation, which arises due to the quadrotor’s under-actuation
-            , and elucidate a seemingly counter-intuitive necessary 
-            condition for the internal stability, that is, 
-        the tool-tip should be located above the quadrotor’s 
+            , and elucidate a seemingly counter-intuitive necessary
+            condition for the internal stability, that is,
+        the tool-tip should be located above the quadrotor’s
         center-of-mass. We further manifest that this internal
-        dynamics can exhibit finite-time escape and propose a 
-        stabilizing action to prevent that. The theory is then 
-        illustrated for the problems of rotating tool operation 
+        dynamics can exhibit finite-time escape and propose a
+        stabilizing action to prevent that. The theory is then
+        illustrated for the problems of rotating tool operation
         and hybrid force/position control with relevant simulation results.
       links:
       - label: "manuscript"
