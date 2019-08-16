@@ -2,8 +2,8 @@
 layout: default
 title: "Hai-Nguyen Nguyen: Research"
 redirect_from: "/talks"
-header_title: Aerial Manipulation
-header_quote: Robotics is the science of perceiving and manipulating the physical world through computer-controlled devices. (Probabilistic Robotics)
+header_title: Aerial Robotics
+header_quote: Enable aerial vehicles to physically interact with the environment
 include_header: header-h1.html
 nav_item: research
 ---
@@ -12,20 +12,20 @@ nav_item: research
   <div class="border-bottom border-light-gray mt4 mb4 pb3 circle-line">
     <a href="{{ proj.links | map: 'url' | first }}" target="_blank" name="{{ proj.name | downcase | replace:' ','-' | remove:',' }}">
       <h3>{{ proj.name }}</h3>
-    </a> 
+    </a>
     <p>
       {{ proj.description }}
     </p>
     {% if proj.embed_url %}
     {% include iframe.html url=proj.embed_url %}
     {% endif %}
-    {% if proj.publications %} 
+    {% if proj.publications %}
     <h4>Publications</h4>
      <div>
       {% for pub in proj.publications %}
       <p>
-        {{ pub.author }} "<a href="{% if pub.url %} {{ pub.url}} {% else %} {{ pub.links | map: 'url' | first }}{% endif %}" target="_blank" name="{{ pub.name | downcase | replace:' ','-' | remove:',' }}"><i>{{ pub.title }}</i></a>", 
-        {% if pub.journal %} {{ pub.journal }},{% endif %} 
+        {{ pub.author }} "<a href="{% if pub.url %} {{ pub.url}} {% else %} {{ pub.links | map: 'url' | first }}{% endif %}" target="_blank" name="{{ pub.name | downcase | replace:' ','-' | remove:',' }}"><i>{{ pub.title }}</i></a>",
+        {% if pub.journal %} {{ pub.journal }},{% endif %}
         {% if pub.conference %} {{ pub.conference }},{% endif %}
         {% if pub.volume %} {{ pub.volume }},{% endif %}
         {% if pub.page %} {{ pub.page }},{% endif %}
@@ -40,6 +40,6 @@ nav_item: research
       </p>
       {% endfor %}
      </div>
-    {% endif %} 
+    {% endif %}
   </div>
 {% endfor %}

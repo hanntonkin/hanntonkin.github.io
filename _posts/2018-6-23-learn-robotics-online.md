@@ -1,4 +1,4 @@
---- 
+---
 layout: post
 title: "Learn Robotics online"
 location: London, UK
@@ -6,13 +6,13 @@ excerpt: My favorite online courses in Robotics.
 update_date: 2018-6-23
 redirect_from: /2018/6/23/learn-robotics-online/
 readlater: true
-tags: 
+tags:
 - robotics
 add_to_popular_list: true
 thumbnail_path: blog/learn_robotics.jpg
 ---
 
-This is my collection of useful resources for learning robotics online. I will try my best to organize the materials (from generic to specific, fundamental to state-of-the-art) and hopefully update them frequently. 
+This is my collection of useful resources for learning robotics online. I will try my best to organize the materials (from generic to specific, fundamental to state-of-the-art) and hopefully update them frequently.
 
 
 I will start with some online courses first (video lectures available).
@@ -24,7 +24,7 @@ I will start with some online courses first (video lectures available).
 [Khan - Differential Equations](https://www.khanacademy.org/math/differential-equations)
 
 
-[Harvard - Probability](https://projects.iq.harvard.edu/stat110/home) by Joe Blitzstein. 
+[Harvard - Probability](https://projects.iq.harvard.edu/stat110/home) by Joe Blitzstein.
 
 [HMC - Real Analysis](http://analysisyawp.blogspot.com/) by Francis Su.
 
@@ -52,10 +52,13 @@ I will start with some online courses first (video lectures available).
 
 [ETHZ - ROS](http://www.rsl.ethz.ch/education-students/lectures/ros.html) by Péter Fankhauser, Dominic Jud, Martin Wermelinger and Marco Hutter.
 
+[Freiburg - C++](http://www.ipb.uni-bonn.de/teaching/modern-cpp/) or [Udacity - C++](https://eu.udacity.com/course/c-for-programmers--ud210) or [TheChernoProject
+ - C++](https://www.youtube.com/watch?v=18c3MTX0PK0&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb)
+
 
 **Robot Mechanics**
 
-[SNU - Robot Mechanics and Control](https://www.edx.org/bio/frank-c-park) by Frank C. Park (EiC of T-RO). 
+[SNU - Robot Mechanics and Control](https://www.edx.org/bio/frank-c-park) by Frank C. Park (EiC of T-RO).
 
 [NU - Modern Robotics](https://www.coursera.org/specializations/modernrobotics) by Kevin Lynch (EiC of T-RO).
 
@@ -74,7 +77,9 @@ I will start with some online courses first (video lectures available).
 
 [NTU - Open-Source Robotics](http://osrobotics.org/pages/introduction_osr.html) by Quang-Cuong Pham and Francisco Suárez-Ruiz.
 
+**Localization and Mapping**
 
+[Freiburg - Robot Mapping](https://www.youtube.com/watch?v=U6vr3iNrwRA&list=PLgnQpQtFTOGQrZ4O5QzbIHgl3b1JHimN_)
 **Optimal Control**
 
 [Shef - Predictive control for beginners](http://controleducation.group.shef.ac.uk/htmlformpc/introtoMPCbook.html) by John Anthony Rossiter.
