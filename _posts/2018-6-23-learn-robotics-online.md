@@ -52,8 +52,7 @@ I will start with some online courses first (video lectures available).
 
 [ETHZ - ROS](http://www.rsl.ethz.ch/education-students/lectures/ros.html) by Péter Fankhauser, Dominic Jud, Martin Wermelinger and Marco Hutter.
 
-[Freiburg - C++](http://www.ipb.uni-bonn.de/teaching/modern-cpp/) or [Udacity - C++](https://eu.udacity.com/course/c-for-programmers--ud210) or [TheChernoProject
- - C++](https://www.youtube.com/watch?v=18c3MTX0PK0&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb)
+[Freiburg - C++](http://www.ipb.uni-bonn.de/teaching/modern-cpp/) or [Udacity - C++](https://eu.udacity.com/course/c-for-programmers--ud210) or [TheChernoProject - C++](https://www.youtube.com/watch?v=18c3MTX0PK0&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb)
 
 
 **Robot Mechanics**

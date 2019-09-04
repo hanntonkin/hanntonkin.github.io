@@ -1,6 +1,6 @@
 - name: "Aerial Inspection at Close Proximity"
   longname: "Aerial Inspection at Close Proximity"
-  date: "November 7, 2015"
+  date: "November 7, 2018"
   description: |
       An autonomous quadrotor system equipped with a winch-tethered magnet
       that is capable of perching on and sliding along a vertical surface for inspection at close
@@ -22,10 +22,17 @@
       - label: "on EMPA"
         url: "https://www.youtube.com/watch?v=MlvN91TFKeU"
 
+- name: "Adaptive Tensile Perching"
+  longname: "Adaptive Tensile Perching"
+  date: "May 7, 2019"
+  description: |
+       An autonomous quadrotor system equipped with a passively adaptive perching mechanism which allows an aerial vehicle to stably attach to a variety of surfaces including tree branches and pipelines. A hybrid force-motion controller is developed to ensure the cable tension to be regulated as the vehicle achieves the desired attitude. The hybrid control approach exploits the mechanical compliance of the system to ensure reliable, stable attachment to irregular natural structures, and the addition of a winch allows the robot to stably orient itself in any position or orientation relative to the branch.
+  embed_url: "https://www.youtube.com/embed/zW0LdXWCt_M"
+  publications:
     - title: "A passively adaptive microspine grapple for robust, controllable perching"
       author: "H. Nguyen, R. Siddall, B. Stephens, A. Navarro-Rubio, M. Kovac"
       conference: "RoboSoft"
-      url: "http://hann.work/research/"
+      url: "https://ieeexplore.ieee.org/document/8722779"
       year: "2019"
 
 - name: "Spherically-connected multi-Quadrotor Platform (SmQ)"
