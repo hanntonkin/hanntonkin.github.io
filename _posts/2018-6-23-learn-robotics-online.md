@@ -79,6 +79,7 @@ I will start with some online courses first (video lectures available).
 **Localization and Mapping**
 
 [Freiburg - Robot Mapping](https://www.youtube.com/watch?v=U6vr3iNrwRA&list=PLgnQpQtFTOGQrZ4O5QzbIHgl3b1JHimN_)
+
 **Optimal Control**
 
 [Shef - Predictive control for beginners](http://controleducation.group.shef.ac.uk/htmlformpc/introtoMPCbook.html) by John Anthony Rossiter.

@@ -30,10 +30,11 @@
   embed_url: "https://www.youtube.com/embed/zW0LdXWCt_M"
   publications:
     - title: "A passively adaptive microspine grapple for robust, controllable perching"
-      author: "H. Nguyen, R. Siddall, B. Stephens, A. Navarro-Rubio, M. Kovac"
+      author: "H. Nguyen*, R. Siddall*, B. Stephens, A. Navarro-Rubio, M. Kovac"
       conference: "RoboSoft"
       url: "https://ieeexplore.ieee.org/document/8722779"
       year: "2019"
+      note: "* equal contribution"
 
 - name: "Spherically-connected multi-Quadrotor Platform (SmQ)"
   longname: "Spherically-connected multi-Quadrotor Platform"
