@@ -1,6 +1,4 @@
-This is the homepage of Hann.
-
-Content by Hann, theme by  [Yevgeniy Brikman](http://www.ybrikman.com).
+This is the homepage of Hann. Theme by  [Yevgeniy Brikman](http://www.ybrikman.com).
 
 ## Key features
 1. about 
@@ -25,6 +23,13 @@ $$I = \int \rho R^{2} dV$$
 1. ./setup.sh
 2. ./serve.sh
 4. To test: `http://localhost:4000`
+
+## Docker
+
+docker build -t webapp .
+docker run -d -v $(pwd):/src -p 4000:4000 -e LIMIT_POSTS=5 webapp
+
+
 
 See the [Jekyll](http://jekyllrb.com/) and [GitHub Pages](https://pages.github.com/)
 documentation for more info.
