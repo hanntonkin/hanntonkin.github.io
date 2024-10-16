@@ -7,7 +7,6 @@ nav:
   main:
     cv: "/assets/doc/HannCV.pdf"
     research: "/research"
-    events: "/events"
     notes: "/notes"
   notes:
     all: "/notes"
@@ -19,7 +18,7 @@ nav:
 name: "Hann"
 fullname: "Hai-Nguyen Nguyen"
 slogan: "Work-in-progress roboticist"
-description: "Hai-Nguyen (Hann) Nguyen, Research Associate at Imperial College London"
+description: "Hai-Nguyen (Hann) Nguyen, Lecturer at RMIT"
 thumbnail_path: "nguyen.jpg"
 lab: "https://www.imperial.ac.uk/aerial-robotics/"
 snu: "http://en.snu.ac.kr/"
@@ -35,7 +34,7 @@ google_analytics_id: UA-70444178-1
 # URLs
 contact_urls:
   home: 
-    url: "https://www.imperial.ac.uk/aerial-robotics"
+    url: "http://RMIT.edu.vn/"
     label: "Homepage"
     icon: "home"  
   linkedin: 
