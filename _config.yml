@@ -34,7 +34,7 @@ google_analytics_id: UA-70444178-1
 # URLs
 contact_urls:
   home: 
-    url: "http://RMIT.edu.vn/"
+    url: "https://academics.rmit.edu.au/hainguyen-nguyen"
     label: "Homepage"
     icon: "home"  
   linkedin: 
