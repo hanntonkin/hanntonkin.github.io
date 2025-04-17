@@ -1,55 +1,453 @@
----
-layout: default
-title: "Hai-Nguyen Nguyen: Home Page"
-header_title: Hai-Nguyen Nguyen
-include_header: home_header.html
-nav_item: home
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hai-Nguyen (Hann) Nguyen | Lecturer in Robotics & Mechatronics at RMIT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .research-card {
+            transition: all 0.3s ease;
+        }
+        .research-card:hover .research-overlay {
+            opacity: 1;
+        }
+        .research-overlay {
+            transition: opacity 0.3s ease;
+            opacity: 0;
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #3b82f6;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        .section {
+            scroll-margin-top: 100px;
+        }
+    </style>
+</head>
+<body id="home" class="font-sans bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-blue-800"><a href="#home">HANN</a></div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-blue-600">Home</a>
+                    <a href="#teaching" class="nav-link text-gray-700 hover:text-blue-600">Teaching</a>
+                    <a href="#research" class="nav-link text-gray-700 hover:text-blue-600">Research</a>
+                    <a href="#positions" class="nav-link text-gray-700 hover:text-blue-600">Positions</a>
+                </div>
+                <button class="md:hidden focus:outline-none" id="menu-toggle">
+                    <i class="fas fa-bars text-blue-800 text-xl"></i>
+                </button>
+            </div>
+            <!-- Mobile menu -->
+            <div class="md:hidden hidden mt-4" id="mobile-menu">
+                <div class="flex flex-col space-y-3">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600">Home</a>
+                    <a href="#teaching" class="text-gray-700 hover:text-blue-600">Teaching</a>
+                    <a href="#research" class="text-gray-700 hover:text-blue-600">Research</a>
+                    <a href="#positions" class="text-gray-700 hover:text-blue-600">Positions</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-<div class="clearfix mxn2">
-    <div class="col sm-col-9 px2">
+    <!-- Hero Section -->
+    <header class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-3xl font-bold mb-4">Hai-Nguyen (Hann) Nguyen</h1>
+                <h2 class="text-2xl md:text-2xl font-semibold mb-4">PhD., Lecturer in Robotics & Mechatronics</h2>
+                <h2 class="text-2xl md:text-2xl font-semibold mb-4">RMIT University, Saigon South Campus, Vietnam</h2>
+                <p class="text-lg mb-8">Robotics is a genuine symbiosis of science and engineering. I feel fortunate to work on both the yin and yang of robotics: from proving theorems on papers to build hardware & code software on product-grade robots.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#positions" class="bg-white text-blue-800 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-all">
+                        Open Positions <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="#research" class="border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-blue-800 transition-all">
+                        View Research
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                    <img src="https://academics.rmit.edu.au/hainguyen-nguyen/thumbnail" 
+                         alt="Hann Nguyen" 
+                         class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </header>
 
-      <h3 class="mb2">Open PhD positions</h3>
-    <p align="justify">
-      <a href="{{ site.url }}/assets/doc/RMIT_PhD_topic_1_autonomy.pdf">Advanced Autonomy for Aerial Robots in Ecological and Agricultural Environments.</a>
-    </p>
-    
-    <p align="justify">
-      <a href="{{ site.url }}/assets/doc/RMIT_PhD_topic_2_manipulation.pdf">Physically Capable Aerial Robots for Environmental and Infrastructure Applications.</a>
-    </p>
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50 section">
+        <div class="container mx-auto px-6">
+            <!-- <h2 class="text-3xl font-bold text-center mb-12 text-blue-800">About</h2> -->
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4">Biography</h3>
+                    <p class="text-lg mb-4">
+                        Dr. Hai-Nguyen Nguyen, also known by his initials <a href="https://en.wikipedia.org/wiki/Courtesy_name" class="inline-flex items-center text-blue-800 font-medium hover:text-blue-600">HANN</a>, is a Lecturer in Robotics and Mechatronics at RMIT Vietnam. He holds a Ph.D. in Mechanical and Aerospace Engineering from Seoul National University, Korea. His research focuses on robotics, with a particular emphasis on drone technologies.
+                    </p>
+                    <p class="text-lg mb-4">
+                        Dr. Nguyen’s experience spans both research-focus institutions and deep-tech startups. He has held various positions at major research institutes, including Imperial College London (UK), LAAS-CNRS (France), and Seoul National University (Korea). He has also ventured beyond academia, spending a year working at a robotics startup in California, U.S. (remotely due to the COVID-19).
+                    </p>
+                    <p class="text-lg mb-4">
+                        His work has been published in leading robotics venues, including CORE A/A* conferences (IROS, ICRA) and Scimago Q1 journals (RAL, TRO, TMech, Automatica). Actively engaged in the robotics community, he has peer-reviewed and edited over 100 robotics papers. Since 2023, he has served as an Associate Editor for ICRA, a CORE A* conference in robotics.
+                    </p>
+                    <div class="mt-8">
+                        <a href="http://hann.work/assets/doc/HannCV.pdf" class="inline-flex items-center text-blue-800 font-medium hover:text-blue-600">
+                            Download Full CV <i class="fas fa-download ml-2"></i>
+                        </a>
+                    </div>
+                </div>
 
-    <h3 class="mb2">Bio</h3>
+                <div class="md:w-1/2">
+                    
+
+                
+
+                   
+
+                    <h3 id="positions" class="text-2xl font-semibold mb-4">News</h3>
+
+                    
+                    <div class="space-y-4">
+                        <div class="bg-blue-50 border-l-4 border-blue-800 p-6 rounded-r-lg mb-8">
+                        <h3 class="text-xl font-bold text-blue-800 mb-2">We're Hiring!</h3>
+                        </div>
+
+                        <div class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden mb-6 transition-all hover:shadow-md">
+                        <div class="p-6">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="text-xl font-bold text-blue-800 mb-1">Foundation Models for Aerial Robotics</h3>
+                                    <p class="text-blue-600 mb-4">Co-advisor: 
+                                        <a href="https://www.csc.liv.ac.uk/~anguyen/" class="hover:underline">Dr. Anh Nguyen (Liverpool) </a></p>
+                                </div>
+                                <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Open</span>
+                            </div>
+                            <a href="http://hann.work/assets/doc/RMIT_PhD_topic_1_autonomy.pdf" class="inline-flex items-center text-blue-800 font-medium hover:underline">
+                                Apply Now <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                        </div>
+
+                        <div class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden mb-6 transition-all hover:shadow-md">
+                        <div class="p-6">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="text-xl font-bold text-blue-800 mb-1">Physically Capable Aerial Robots</h3>
+                                </div>
+                                <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Open</span>
+                            </div>
+                            <a href="http://hann.work/assets/doc/RMIT_PhD_topic_2_manipulation.pdf" class="inline-flex items-center text-blue-800 font-medium hover:underline">
+                                Apply Now <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- recent news 1 -->
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                                <i class="fas fa-id-badge text-blue-800"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-blue-800 mb-1">10/2024: New positions</h4>
+                                <p class="text-gray-600">
+                                    <a href="https://academics.rmit.edu.au/hainguyen-nguyen" class="hover:underline">Lecturer at RMIT, Saigon South Campus, Vietnam.
+                                    </a>
+                                </p>
+                                <p class="text-gray-600">Associate Editor for ICRA 2025.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                                <i class="fas fa-award text-blue-800"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-blue-800 mb-1">05/2024: Best UAV Paper Award-Finalist - ICRA 2024</h4>
+                                <p class="text-gray-600"><a href="https://2024.ieee-icra.org/awards-and-finalists/" class="hover:underline">Sequential Trajectory Optimization for Externally-Actuated Modular Manipulators with Joint Locking</a>, J. Choe, J. Lee, H. Yang, H. Nguyen†, and D. J. Lee† (†co-corresponding).</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Teaching Section -->
+    <section id="teaching" class="py-16 bg-white section">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-800">Teaching</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <!-- Course 1 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md transition-all card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 text-blue-800 p-3 rounded-lg mr-4">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">MANU 2478: Advanced Robotics</h3>
+                            <p class="text-sm text-gray-600">Undergraduate Course | Spring 2025 | RMIT</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">Covers topics in robot mechanics, control, and perception, with an emphasis on first-principle approaches. Includes hands-on projects using real robotic systems.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">First Principles Thinking</span>
+                    </div>
+                </div>
+                
+                <!-- Course 2 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md transition-all card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 text-blue-800 p-3 rounded-lg mr-4">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">CIVE1266: Intro to Environmental and Sustainable Systems Engineering</h3>
+                            <p class="text-sm text-gray-600">Undergraduate Course | Summer 2025 | RMIT</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">Covers fundamentals of systems engineering. Focuses on identifying requirements, selecting methods, and testing solutions for natural or manmade systems.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">System Thinking</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <!-- Research Section -->
+    <section id="research" class="py-16 bg-gray-50 section">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-800">Research</h2>
+
+            <div class="grid md:grid-cols-2 gap-10 mb-16">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="relative w-full pb-[56.25%] rounded-md overflow-hidden">
+                        <iframe class="absolute top-0 left-0 w-full h-full"
+                                src="https://www.youtube.com/embed/NcGy41yxVtI?si=d5TjGRSH59kTeIWx"
+                                title="Leveraging Physical Interactions"
+                                frameborder="0"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+            
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="relative w-full pb-[56.25%] rounded-md overflow-hidden">
+                        <iframe class="absolute top-0 left-0 w-full h-full"
+                                src="https://www.youtube.com/embed/v9NVUoCRyBY?si=1WEL-VEd3ZBBbQ5a"
+                                title="Novel Aerial Platform for Physical Interactions"
+                                frameborder="0"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <h3 class="text-2xl font-bold mb-6 text-blue-800">Selected Publications</h3>
+            <div class="bg-white rounded-xl shadow-md overflow-hidden mb-8">
+                <div class="divide-y divide-gray-200">
+                    
+                    <!-- Publication 1 -->
+                    <div class="p-6 hover:bg-blue-50 transition-all">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 text-blue-800 p-3 rounded-lg mr-4">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-blue-800 mb-1">
+                                    <a href="https://ieeexplore.ieee.org/document/10611268" class="hover:underline">
+                                        Sequential Trajectory Optimization for Externally-Actuated Modular Manipulators with Joint Locking
+                                    </a> 
+                                </h4>
+                                <p class="text-sm text-gray-600 mb-2">J. Choe, J. Lee, H. Yang, H. Nguyen†, and D. J. Lee† (†co-corresponding)</p>
+                                <p class="text-sm text-gray-600 mb-2">IEEE International Conference on Robotics and Automation (ICRA), 2024</p>
+                                <p class="text-gray-600">A novel trajectory planning method for externally-actuated modular manipulators (EAMMs), consisting of multiple rotor-actuated links with joints that can be either locked or unlocked. </p>
+                                
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">ICRA</span>
+                                    <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">CORE A*</span>
+                                    <span class="bg-green-100 text-blue-800 text-xs px-2 py-1 rounded">
+                                        <a href="https://www.inrol.snu.ac.kr/_files/ugd/0c0760_c059f5b1100148dcb8722eb4fec761c9.pdf" class="text-blue-800 font-medium hover:underline">
+                                            Preprint
+                                        </a>
+                                    </span>
+                                    <span class="bg-yellow-100 text-blue-800 text-xs px-2 py-1 rounded">
+                                        <a href="https://youtu.be/NgLBstCAHJQ" class="text-blue-800 font-medium hover:underline">
+                                            Video
+                                        </a>
+                                    </span>
+                                </div>
   
-    <p align="justify">
-      Dr. <u>Ha</u>i-<u>N</u>guyen <u>N</u>guyen, also known by his initials <a href="https://en.wikipedia.org/wiki/Courtesy_name">HANN</a>, is a Lecturer in Robotics and Mechatronics at <a href="https://www.rmit.edu.vn/about-us/who-we-are/our-commitments/vietnam-country-commitment">RMIT Vietnam</a>. He holds a Ph.D. in Mechanical and Aerospace Engineering from <a href="https://en.snu.ac.kr/index.html">Seoul National University</a>, Korea. His research focuses on robotics, with a particular emphasis on drone technologies.
-    </p> 
+                               
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Publication 2 -->
+                    <div class="p-6 hover:bg-blue-50 transition-all">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 text-blue-800 p-3 rounded-lg mr-4">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-blue-800 mb-1">
+                                    <a href="https://ieeexplore.ieee.org/document/9913068" class="hover:underline">
+                                    An Integrated Framework for Autonomous Sensor Placement With Aerial Robots
+                                    </a>
+                                </h4>
+                                <p class="text-sm text-gray-600 mb-2">B. Stephens*, H. Nguyen*, S. Hamaza and M. Kovac (*co-first)</p>
+                                <p class="text-sm text-gray-600 mb-2">IEEE/ASME Transactions on Mechatronics (TMech), 2023</p>
+                                <p class="text-gray-600"> 162 flight experiments shows the proposed framework's ability to autonomously place sensors within 10cm of the target with a success rate of 93.8% and 95% confidence interval of (89%, 97%), thus confirming the robustness of the proposed approach. </p>
+                                
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">TMECH</span>
+                                    <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Scimago Q1</span>
+                                    <span class="bg-green-100 text-blue-800 text-xs px-2 py-1 rounded">
+                                        <a href="https://pure.tudelft.nl/ws/portalfiles/portal/148732618/An_Integrated_Framework_for_Autonomous_Sensor_Placement_With_Aerial_Robots.pdf" class="text-blue-800 font-medium hover:underline">
+                                            Preprint
+                                        </a>
+                                    </span>
+                                    <span class="bg-yellow-100 text-blue-800 text-xs px-2 py-1 rounded">
+                                        <a href="https://www.youtube.com/watch?v=4R8DhVpEbSQ" class="text-blue-800 font-medium hover:underline">
+                                            Video
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Publication 3 -->
+                    <div class="p-6 hover:bg-blue-50 transition-all">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 text-blue-800 p-3 rounded-lg mr-4">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-blue-800 mb-1">
+                                    <a href="https://ieeexplore.ieee.org/document/8294249" class="hover:underline">
+                                        A Novel Robotic Platform for Aerial Manipulation Using Quadrotors as Rotating Thrust Generators
+                                    </a>
+                                </h4>
+                                <p class="text-sm text-gray-600 mb-2">H. Nguyen, S. Park, J. Park and D. J. Lee</p>
+                                <p class="text-sm text-gray-600 mb-2">IEEE Transactions on Robotics (TRO), 2018</p>
+                                <p class="text-gray-600"> Development of a novel aerial robotic platform for physical interactions, which consists of a rigid frame and multiple quadrotors that are connected to the frame via passive spherical joints and act as distributed rotating thrust generators to collectively propel the frame by adjusting their attitude and thrust force.</p>
+                                
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">TRO</span>
+                                    <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Scimago Q1</span>
+                                    <span class="bg-green-100 text-blue-800 text-xs px-2 py-1 rounded">
+                                        <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8294249" class="text-blue-800 font-medium hover:underline">
+                                            Open Access
+                                        </a>
+                                    </span>
+                                    <span class="bg-yellow-100 text-blue-800 text-xs px-2 py-1 rounded">
+                                        <a href="https://www.youtube.com/watch?v=v9NVUoCRyBY&t=83s" class="text-blue-800 font-medium hover:underline">
+                                            Video
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="https://academics.rmit.edu.au/hainguyen-nguyen/publications" class="inline-flex items-center bg-blue-800 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-all">
+                    View All Publications <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
 
-    <p align="justify">
-      Dr. Nguyen’s experience spans both research-focus institutions and deep-tech startups. He has held various positions at major research institutes, including <a href="https://www.imperial.ac.uk/">Imperial College London</a> (UK), <a href="https://www.laas.fr/public/en">LAAS-CNRS</a> (France), and <a href="https://en.snu.ac.kr/index.html">Seoul National University</a> (Korea). He has also ventured beyond academia, spending a year working at a robotics startup in California, U.S. (remotely due to the COVID-19).
-    </p>
 
-    <p align="justify">
-      His work has been published in leading robotics venues, including CORE A/A* conferences (IROS, ICRA) and Scimago Q1 journals (RAL, TRO, TMech, Automatica). Actively engaged in the robotics community, he has peer-reviewed and edited over 100 robotics papers. Since 2023, he has served as an Associate Editor for <a href="https://portal.core.edu.au/conf-ranks/2051/">ICRA</a>, a CORE A* conference in robotics.
-    </p>
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-blue-300 py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="text-xl font-bold text-white mb-2">Hai-Nguyen (Hann) Nguyen</div>
+                    <p class="text-sm">Robotics & Mechatronics Engineering</p>
+                    <!-- <p class="text-sm">School of Science, Engineering and Technology</p> -->
+                    <p class="text-sm">RMIT University, South Saigon Campus, Vietnam</p>
+                </div>
+                <div class="text-sm">
+                    &copy; 2025 All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
 
-  
-  
-    </div>
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
 
-  
+        // Smooth scrolling for all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
 
-
-    <div class="col sm-col-3 px2">
-      <h3 class="mb2">Contact</h3>
-      <div class="clearfix">
-        {% for external_url_hash in site.contact_urls %}
-          {% assign external_url = external_url_hash[1] %}
-          <a href="{{ external_url.url }}" target="_blank" class="col dark-gray width-120">
-            <i class="fa fa-fw fa-lg fa-{{ external_url.icon }}"></i>
-            <span class="h6 header-font">{{ external_url.label }}</span>
-          </a>
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-  
+        // Add shadow to navbar on scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 10) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>
