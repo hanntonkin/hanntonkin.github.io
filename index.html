@@ -1,453 +1,464 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hai-Nguyen (Hann) Nguyen | Lecturer in Robotics & Mechatronics at RMIT</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .gradient-bg {
-            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
-        }
-        .card-hover:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-        .research-card {
-            transition: all 0.3s ease;
-        }
-        .research-card:hover .research-overlay {
-            opacity: 1;
-        }
-        .research-overlay {
-            transition: opacity 0.3s ease;
-            opacity: 0;
-        }
-        .nav-link {
-            position: relative;
-        }
-        .nav-link:after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -2px;
-            left: 0;
-            background-color: #3b82f6;
-            transition: width 0.3s ease;
-        }
-        .nav-link:hover:after {
-            width: 100%;
-        }
-        .section {
-            scroll-margin-top: 100px;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HANN — Roboticist</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%232b66d9'/><text x='50' y='53' font-family='Arial, Helvetica, sans-serif' font-size='58' font-weight='800' fill='white' text-anchor='middle' dominant-baseline='middle'>H</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; max-width: 100%; overflow-x: hidden; }
+  html { scroll-behavior: smooth; }
+  body { background: #fbfcfe; }
+  ::selection { background: #2b66d9; color: #fff; }
+  a { color: inherit; }
+  img, iframe { max-width: 100%; }
+  #top, #teaching, #research, #publications { scroll-margin-top: -3px; }
+</style>
 </head>
-<body id="home" class="font-sans bg-white text-gray-800">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
-                <div class="text-2xl font-bold text-blue-800"><a href="#home">HANN</a></div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="nav-link text-gray-700 hover:text-blue-600">Home</a>
-                    <a href="#teaching" class="nav-link text-gray-700 hover:text-blue-600">Teaching</a>
-                    <a href="#research" class="nav-link text-gray-700 hover:text-blue-600">Research</a>
-                    <a href="#positions" class="nav-link text-gray-700 hover:text-blue-600">Positions</a>
-                </div>
-                <button class="md:hidden focus:outline-none" id="menu-toggle">
-                    <i class="fas fa-bars text-blue-800 text-xl"></i>
-                </button>
-            </div>
-            <!-- Mobile menu -->
-            <div class="md:hidden hidden mt-4" id="mobile-menu">
-                <div class="flex flex-col space-y-3">
-                    <a href="#home" class="text-gray-700 hover:text-blue-600">Home</a>
-                    <a href="#teaching" class="text-gray-700 hover:text-blue-600">Teaching</a>
-                    <a href="#research" class="text-gray-700 hover:text-blue-600">Research</a>
-                    <a href="#positions" class="text-gray-700 hover:text-blue-600">Positions</a>
-                </div>
-            </div>
+<body>
+<div style="font-family: 'Manrope', system-ui, sans-serif; color: #1c2530; background: #fbfcfe; -webkit-font-smoothing: antialiased; min-height: 100vh;">
+
+  <!-- NAV -->
+  <nav style="position: sticky; top: 0; z-index: 20; background: rgba(251,252,254,0.82); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid #e6ebf2;">
+    <div style="max-width: 1120px; margin: 0 auto; padding: 0 clamp(16px, 5vw, 44px); height: 68px; display: flex; align-items: center; justify-content: space-between;">
+      <a href="#top" style="text-decoration: none; display: flex; align-items: center; gap: 11px; flex-shrink: 0;">
+        <span style="font-weight: 800; font-size: clamp(18px, 5vw, 24px); letter-spacing: -0.01em">HANN</span>
+      </a>
+      <div style="display: flex; align-items: center; gap: clamp(10px, 3vw, 30px); font-size: clamp(11px, 2.6vw, 14px); font-weight: 600; color: #5a6776; white-space: nowrap;">
+        <a href="#teaching" style="text-decoration: none;">Teaching</a>
+        <a href="#research" style="text-decoration: none;">Research</a>
+        <a href="#publications" style="text-decoration: none;">Publications</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="top" style="max-width: 1120px; margin: 0 auto; padding: clamp(36px, 9vw, 64px) clamp(18px, 5vw, 44px) clamp(30px, 7vw, 56px);">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(28px, 6vw, 64px); align-items: start;">
+      <div>
+        <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #2b66d9; margin-bottom: 18px;">Roboticist</div>
+        <h1 style="font-size: clamp(26px, 6vw, 36px); line-height: 1.08; letter-spacing: -0.02em; font-weight: 800; margin: 0 0 14px;">Hai-Nguyen (Hann) Nguyen</h1>
+        <div style="font-size: 18px; font-weight: 600; color: #1c2530; margin-bottom: 5px;">PhD · Lecturer in Robotics &amp; Mechatronics</div>
+        <div style="font-size: 15px; color: #5a6776; margin-bottom: 4px;"><a href="https://academics.rmit.edu.au/hainguyen-nguyen" target="_blank" rel="noopener" style="text-decoration: none;">RMIT University</a> · Saigon South Campus, Vietnam</div>
+        <div style="font-size: 14px; color: #8a94a3; margin-bottom: 24px;">Previously · <a href="https://www.imperial.ac.uk" target="_blank" rel="noopener" style="text-decoration: none;">Imperial College</a> · <a href="https://www.cnrs.fr/en" target="_blank" rel="noopener" style="text-decoration: none;">CNRS</a> · <a href="https://en.snu.ac.kr" target="_blank" rel="noopener" style="text-decoration: none;">Seoul National University</a></div>
+        <p style="font-size: 18px; line-height: 1.6; color: #36414f; max-width: 540px; margin: 0 0 22px; text-wrap: pretty;">Robotics is a true symbiosis of science and engineering. I feel fortunate to work across its full spectrum — from the mathematics that describes motion, to the algorithms that govern it, and to the machines that bring it to life.</p>
+
+        <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 7px 10px; font-size: 14px; font-weight: 600; color: #2b66d9; margin: 0 0 26px;">
+          <a href="https://academics.rmit.edu.au/hainguyen-nguyen" target="_blank" rel="noopener" style="text-decoration: none;">Bio</a>
+          <span style="color: #c3cbd6;">·</span>
+          <a href="https://www.linkedin.com/in/hanntonkin/" target="_blank" rel="noopener" style="text-decoration: none;">LinkedIn</a>
+          <span style="color: #c3cbd6;">·</span>
+          <a href="https://scholar.google.com/citations?user=8Z_Ey0oAAAAJ&hl=en" target="_blank" rel="noopener" style="text-decoration: none;">Scholar</a>
+          <span style="color: #c3cbd6;">·</span>
+          <a href="https://github.com/hanntonkin" target="_blank" rel="noopener" style="text-decoration: none;">GitHub</a>
+          <span style="color: #c3cbd6;">·</span>
+          <a href="assets/doc/HannCV.pdf" target="_blank" rel="noopener" style="text-decoration: none;">CV</a>
+          <span style="color: #c3cbd6;">·</span>
+          <a href="mailto:hann@ieee.org" style="text-decoration: none;">Email</a>
         </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <header class="gradient-bg text-white py-20">
-        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
-            <div class="md:w-1/2 mb-10 md:mb-0">
-                <h1 class="text-4xl md:text-3xl font-bold mb-4">Hai-Nguyen (Hann) Nguyen</h1>
-                <h2 class="text-2xl md:text-2xl font-semibold mb-4">PhD., Lecturer in Robotics & Mechatronics</h2>
-                <h2 class="text-2xl md:text-2xl font-semibold mb-4">RMIT University, Saigon South Campus, Vietnam</h2>
-                <p class="text-lg mb-8">Robotics is a genuine symbiosis of science and engineering. I feel fortunate to work on both the yin and yang of robotics: from proving theorems on papers to build hardware & code software on product-grade robots.</p>
-                <div class="flex flex-wrap gap-4">
-                    <a href="#positions" class="bg-white text-blue-800 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-all">
-                        Open Positions <i class="fas fa-arrow-right ml-2"></i>
-                    </a>
-                    <a href="#research" class="border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-blue-800 transition-all">
-                        View Research
-                    </a>
-                </div>
-            </div>
-            <div class="md:w-1/2 flex justify-center">
-                <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
-                    <img src="https://academics.rmit.edu.au/hainguyen-nguyen/thumbnail" 
-                         alt="Hann Nguyen" 
-                         class="w-full h-full object-cover">
-                </div>
-            </div>
+        <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #9aa4b2; margin: 0 0 4px;">News</div>
+        <div style="max-width: 540px;">
+          <div style="display: grid; grid-template-columns: 82px 1fr; gap: 16px; align-items: baseline; padding: 11px 0; border-top: 1px solid #e6ebf2;">
+            <span style="justify-self: start; font-size: 10px; font-weight: 700; color: #1f8a5b; background: #e7f5ee; padding: 4px 9px; border-radius: 20px; letter-spacing: 0.04em; text-transform: uppercase;">Hiring</span>
+            <span style="font-size: 14px; color: #36414f; line-height: 1.5;">Fully-funded PhD positions on <a href="assets/doc/RMIT_PhD_topic_1_autonomy.pdf" style="color: #2b66d9; font-weight: 700; text-decoration: none;">AI</a> and <a href="assets/doc/RMIT_PhD_topic_2_manipulation.pdf" style="color: #2b66d9; font-weight: 700; text-decoration: none;">Aerial Robotics</a>. </span>
+          </div>
+          <div style="display: grid; grid-template-columns: 82px 1fr; gap: 16px; align-items: baseline; padding: 11px 0; border-top: 1px solid #e6ebf2;">
+            <span style="font-family: ui-monospace, Menlo, monospace; font-size: 12px; color: #2b66d9; font-weight: 600;">10/2025</span>
+            <span style="font-size: 14px; color: #36414f; line-height: 1.5;">Associate Editor, ICRA 2026.</span>
+          </div>
+          <div style="display: grid; grid-template-columns: 82px 1fr; gap: 16px; align-items: baseline; padding: 11px 0; border-top: 1px solid #e6ebf2;">
+            <span style="font-family: ui-monospace, Menlo, monospace; font-size: 12px; color: #2b66d9; font-weight: 600;">10/2024</span>
+            <span style="font-size: 14px; color: #36414f; line-height: 1.5;">Lecturer at RMIT · Associate Editor, ICRA 2025.</span>
+          </div>
+          <div style="display: grid; grid-template-columns: 82px 1fr; gap: 16px; align-items: baseline; padding: 11px 0; border-top: 1px solid #e6ebf2; border-bottom: 1px solid #e6ebf2;">
+            <span style="font-family: ui-monospace, Menlo, monospace; font-size: 12px; color: #2b66d9; font-weight: 600;">05/2024</span>
+            <span style="font-size: 14px; color: #36414f; line-height: 1.5;">Best UAV Paper finalist, ICRA 2024.</span>
+          </div>
         </div>
-    </header>
+      </div>
+      <div style="aspect-ratio: 4 / 5; border-radius: 16px; display: flex; align-items: stretch; justify-content: stretch; padding: 18px; overflow: hidden;">
+        <img src="assets/photos/hann.jpeg" alt="Hann Nguyen" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px; display: block;">
+      </div>
+    </div>
+  </header>
 
-    <!-- About Section -->
-    <section id="about" class="py-16 bg-gray-50 section">
-        <div class="container mx-auto px-6">
-            <!-- <h2 class="text-3xl font-bold text-center mb-12 text-blue-800">About</h2> -->
-            <div class="flex flex-col md:flex-row gap-8">
-                <div class="md:w-1/2">
-                    <h3 class="text-2xl font-semibold mb-4">Biography</h3>
-                    <p class="text-lg mb-4">
-                        Dr. Hai-Nguyen Nguyen, also known by his initials <a href="https://en.wikipedia.org/wiki/Courtesy_name" class="inline-flex items-center text-blue-800 font-medium hover:text-blue-600">HANN</a>, is a Lecturer in Robotics and Mechatronics at RMIT Vietnam. He holds a Ph.D. in Mechanical and Aerospace Engineering from Seoul National University, Korea. His research focuses on robotics, with a particular emphasis on drone technologies.
-                    </p>
-                    <p class="text-lg mb-4">
-                        Dr. Nguyen’s experience spans both research-focus institutions and deep-tech startups. He has held various positions at major research institutes, including Imperial College London (UK), LAAS-CNRS (France), and Seoul National University (Korea). He has also ventured beyond academia, spending a year working at a robotics startup in California, U.S. (remotely due to the COVID-19).
-                    </p>
-                    <p class="text-lg mb-4">
-                        His work has been published in leading robotics venues, including CORE A/A* conferences (IROS, ICRA) and Scimago Q1 journals (RAL, TRO, TMech, Automatica). Actively engaged in the robotics community, he has peer-reviewed and edited over 100 robotics papers. Since 2023, he has served as an Associate Editor for ICRA, a CORE A* conference in robotics.
-                    </p>
-                    <div class="mt-8">
-                        <a href="https://hann.work/assets/doc/HannCV.pdf" class="inline-flex items-center text-blue-800 font-medium hover:text-blue-600">
-                            Download Full CV <i class="fas fa-download ml-2"></i>
-                        </a>
-                    </div>
-                </div>
 
-                <div class="md:w-1/2">
-                    
 
-                
+  <!-- TEACHING -->
+  <section id="teaching" style="max-width: 1120px; margin: 0 auto; padding: clamp(36px, 8vw, 60px) clamp(18px, 5vw, 44px); border-top: 1px solid #e6ebf2;">
+    <div style="display: flex; align-items: baseline; gap: 18px; margin-bottom: 14px;">
+      <span style="font-family: ui-monospace, Menlo, monospace; font-size: 13px; color: #9aa4b2; font-weight: 600;">01</span>
+      <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #2b66d9;">Teaching</span>
+    </div>
+    <h2 style="font-size: clamp(26px, 6vw, 36px); font-weight: 700; letter-spacing: -0.02em; margin: 0 0 44px;">Robotics &amp; Systems Engineering</h2>
 
-                   
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 22px;">
+      <div style="background: #fff; border: 1px solid #e6ebf2; border-radius: 14px; padding: clamp(22px, 5vw, 32px) clamp(20px, 5vw, 30px);">
+        <div style="font-family: ui-monospace, Menlo, monospace; font-size: 12px; color: #2b66d9; font-weight: 600; margin-bottom: 16px;">/ 01 - MANU2478</div>
+        <h4 style="font-size: 21px; font-weight: 700; margin: 0 0 12px; letter-spacing: -0.01em;">Advanced Robotics</h4>
+        <p style="font-size: 16px; line-height: 1.6; color: #5a6776; margin: 0;">Robot mechanics, control, and perception with an emphasis on first-principle approaches. Includes hands-on projects using real robotic systems.</p>
+      </div>
+      <div style="background: #fff; border: 1px solid #e6ebf2; border-radius: 14px; padding: clamp(22px, 5vw, 32px) clamp(20px, 5vw, 30px);">
+        <div style="font-family: ui-monospace, Menlo, monospace; font-size: 12px; color: #2b66d9; font-weight: 600; margin-bottom: 16px;">/ 02 - CIVE1266</div>
+        <h4 style="font-size: 21px; font-weight: 700; margin: 0 0 12px; letter-spacing: -0.01em;">Intro to Environmental &amp; Sustainable Systems Engineering</h4>
+        <p style="font-size: 16px; line-height: 1.6; color: #5a6776; margin: 0;">Fundamentals of systems engineering — identifying requirements, selecting methods, and testing solutions for complex systems.</p>
+      </div>
+    </div>
+  </section>
 
-                    <h3 id="positions" class="text-2xl font-semibold mb-4">News</h3>
 
-                    
-                    <div class="space-y-4">
-                        <div class="bg-blue-50 border-l-4 border-blue-800 p-6 rounded-r-lg mb-8">
-                        <h3 class="text-xl font-bold text-blue-800 mb-2">We're Hiring!</h3>
-                        </div>
+  <!-- RESEARCH -->
+  <section id="research" style="max-width: 1120px; margin: 0 auto; padding: clamp(36px, 8vw, 60px) clamp(18px, 5vw, 44px); border-top: 1px solid #e6ebf2;">
+    <div style="display: flex; align-items: baseline; gap: 18px; margin-bottom: 14px;">
+      <span style="font-family: ui-monospace, Menlo, monospace; font-size: 13px; color: #9aa4b2; font-weight: 600;">02</span>
+      <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #2b66d9;">Research</span>
+    </div>
+    <h2 style="font-size: clamp(26px, 6vw, 36px); font-weight: 700; letter-spacing: -0.02em; margin: 0 0 18px;">Robots that reach out and change the world</h2>
+    <p style="font-size: 19px; line-height: 1.62; color: #5a6776; max-width: 720px; margin: 0 0 48px; text-wrap: pretty;">My work centers on physically-capable robots — machines that don't just roll, walk, or fly but physically interact and manipulate the surroundings.</p>
 
-                        <div class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden mb-6 transition-all hover:shadow-md">
-                        <div class="p-6">
-                            <div class="flex justify-between items-start">
-                                <div>
-                                    <h3 class="text-xl font-bold text-blue-800 mb-1">Foundation Models for Aerial Robotics</h3>
-                                    <p class="text-blue-600 mb-4">Co-advisor: 
-                                        <a href="https://www.csc.liv.ac.uk/~anguyen/" class="hover:underline">Dr. Anh Nguyen (Liverpool) </a></p>
-                                </div>
-                                <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Open</span>
-                            </div>
-                            <a href="https://www.csc.liv.ac.uk/~anguyen/PhD-and-Research-Associate-Positions-in-Robot-Motion-Learning-and-Control/" class="inline-flex items-center text-blue-800 font-medium hover:underline">
-                                Apply Now <i class="fas fa-arrow-right ml-2"></i>
-                            </a>
-                        </div>
-                        </div>
-
-                        <div class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden mb-6 transition-all hover:shadow-md">
-                        <div class="p-6">
-                            <div class="flex justify-between items-start">
-                                <div>
-                                    <h3 class="text-xl font-bold text-blue-800 mb-1">Physically Capable Aerial Robots</h3>
-                                </div>
-                                <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Open</span>
-                            </div>
-                            <a href="https://hann.work/assets/doc/RMIT_PhD_topic_2_manipulation.pdf" class="inline-flex items-center text-blue-800 font-medium hover:underline">
-                                Apply Now <i class="fas fa-arrow-right ml-2"></i>
-                            </a>
-                        </div>
-                        </div>
-
-                        <!-- recent news 1 -->
-                        <div class="flex items-start">
-                            <div class="bg-blue-100 p-3 rounded-lg mr-4">
-                                <i class="fas fa-id-badge text-blue-800"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-blue-800 mb-1">10/2024: New positions</h4>
-                                <p class="text-gray-600">
-                                    <a href="https://academics.rmit.edu.au/hainguyen-nguyen" class="hover:underline">Lecturer at RMIT, Saigon South Campus, Vietnam.
-                                    </a>
-                                </p>
-                                <p class="text-gray-600">Associate Editor for ICRA 2025.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="bg-blue-100 p-3 rounded-lg mr-4">
-                                <i class="fas fa-award text-blue-800"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-blue-800 mb-1">05/2024: Best UAV Paper Award-Finalist - ICRA 2024</h4>
-                                <p class="text-gray-600"><a href="https://2024.ieee-icra.org/awards-and-finalists/" class="hover:underline">Sequential Trajectory Optimization for Externally-Actuated Modular Manipulators with Joint Locking</a>, J. Choe, J. Lee, H. Yang, H. Nguyen†, and D. J. Lee† (†co-corresponding).</p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-            </div>
+    <!-- Students -->
+    <h3 style="font-size: 16px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: #36414f; margin: 0 0 24px;">Students</h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 22px; margin-bottom: 64px;">
+      <div style="text-align: left;">
+        <div style="aspect-ratio: 1; border-radius: 12px; border: 1px solid #dde4ee; overflow: hidden; margin-bottom: 14px;">
+          <img src="assets/photos/toan.jpeg" alt="Duc-Toan Do" style="width: 100%; height: 100%; object-fit: cover; display: block;">
         </div>
-    </section>
-
-
-    <!-- Teaching Section -->
-    <section id="teaching" class="py-16 bg-white section">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12 text-blue-800">Teaching</h2>
-            
-            <div class="grid md:grid-cols-2 gap-8 mb-12">
-                <!-- Course 1 -->
-                <div class="bg-gray-50 p-6 rounded-xl shadow-md transition-all card-hover">
-                    <div class="flex items-center mb-4">
-                        <div class="bg-blue-100 text-blue-800 p-3 rounded-lg mr-4">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold">MANU 2478: Advanced Robotics</h3>
-                            <p class="text-sm text-gray-600">Undergraduate Course | Spring 2025 | RMIT</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 mb-4">Covers topics in robot mechanics, control, and perception, with an emphasis on first-principle approaches. Includes hands-on projects using real robotic systems.</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">First Principles Thinking</span>
-                    </div>
-                </div>
-                
-                <!-- Course 2 -->
-                <div class="bg-gray-50 p-6 rounded-xl shadow-md transition-all card-hover">
-                    <div class="flex items-center mb-4">
-                        <div class="bg-blue-100 text-blue-800 p-3 rounded-lg mr-4">
-                            <i class="fas fa-seedling"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold">CIVE1266: Intro to Environmental and Sustainable Systems Engineering</h3>
-                            <p class="text-sm text-gray-600">Undergraduate Course | Summer 2025 | RMIT</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 mb-4">Covers fundamentals of systems engineering. Focuses on identifying requirements, selecting methods, and testing solutions for natural or manmade systems.</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">System Thinking</span>
-                    </div>
-                </div>
-            </div>
-            
+        <div style="font-size: 17px; font-weight: 700; margin-bottom: 3px;">Duc-Toan Do</div>
+        <div style="font-size: 13px; color: #2b66d9; font-weight: 600; margin-bottom: 6px;">PhD Student with T. Le &amp; M. Bui</div>
+        <div style="font-size: 14px; color: #5a6776; line-height: 1.5;">Performant Aerial Robots</div>
+      </div>
+      <div style="text-align: left;">
+        <div style="aspect-ratio: 1; border-radius: 12px; border: 1px solid #dde4ee; overflow: hidden; margin-bottom: 14px;">
+          <img src="assets/photos/hai.jpeg" alt="Hai Bui" style="width: 100%; height: 100%; object-fit: cover; display: block;">
         </div>
-    </section>
-
-
-    <!-- Research Section -->
-    <section id="research" class="py-16 bg-gray-50 section">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12 text-blue-800">Research</h2>
-
-            <div class="grid md:grid-cols-2 gap-10 mb-16">
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                    <div class="relative w-full pb-[56.25%] rounded-md overflow-hidden">
-                        <iframe class="absolute top-0 left-0 w-full h-full"
-                                src="https://www.youtube.com/embed/NcGy41yxVtI?si=d5TjGRSH59kTeIWx"
-                                title="Leveraging Physical Interactions"
-                                frameborder="0"
-                                allowfullscreen></iframe>
-                    </div>
-                </div>
-            
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                    <div class="relative w-full pb-[56.25%] rounded-md overflow-hidden">
-                        <iframe class="absolute top-0 left-0 w-full h-full"
-                                src="https://www.youtube.com/embed/v9NVUoCRyBY?si=1WEL-VEd3ZBBbQ5a"
-                                title="Novel Aerial Platform for Physical Interactions"
-                                frameborder="0"
-                                allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-            
-            
-            <h3 class="text-2xl font-bold mb-6 text-blue-800">Selected Publications</h3>
-            <div class="bg-white rounded-xl shadow-md overflow-hidden mb-8">
-                <div class="divide-y divide-gray-200">
-                    
-                    <!-- Publication 1 -->
-                    <div class="p-6 hover:bg-blue-50 transition-all">
-                        <div class="flex items-start">
-                            <div class="bg-blue-100 text-blue-800 p-3 rounded-lg mr-4">
-                                <i class="fas fa-file-alt"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-blue-800 mb-1">
-                                    <a href="https://ieeexplore.ieee.org/document/10611268" class="hover:underline">
-                                        Sequential Trajectory Optimization for Externally-Actuated Modular Manipulators with Joint Locking
-                                    </a> 
-                                </h4>
-                                <p class="text-sm text-gray-600 mb-2">J. Choe, J. Lee, H. Yang, H. Nguyen†, and D. J. Lee† (†co-corresponding)</p>
-                                <p class="text-sm text-gray-600 mb-2">IEEE International Conference on Robotics and Automation (ICRA), 2024</p>
-                                <p class="text-gray-600">A novel trajectory planning method for externally-actuated modular manipulators (EAMMs), consisting of multiple rotor-actuated links with joints that can be either locked or unlocked. </p>
-                                
-                                <div class="flex flex-wrap gap-2 mb-4">
-                                    <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">ICRA</span>
-                                    <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">CORE A*</span>
-                                    <span class="bg-green-100 text-blue-800 text-xs px-2 py-1 rounded">
-                                        <a href="https://www.inrol.snu.ac.kr/_files/ugd/0c0760_c059f5b1100148dcb8722eb4fec761c9.pdf" class="text-blue-800 font-medium hover:underline">
-                                            Preprint
-                                        </a>
-                                    </span>
-                                    <span class="bg-yellow-100 text-blue-800 text-xs px-2 py-1 rounded">
-                                        <a href="https://youtu.be/NgLBstCAHJQ" class="text-blue-800 font-medium hover:underline">
-                                            Video
-                                        </a>
-                                    </span>
-                                </div>
-  
-                               
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Publication 2 -->
-                    <div class="p-6 hover:bg-blue-50 transition-all">
-                        <div class="flex items-start">
-                            <div class="bg-blue-100 text-blue-800 p-3 rounded-lg mr-4">
-                                <i class="fas fa-file-alt"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-blue-800 mb-1">
-                                    <a href="https://ieeexplore.ieee.org/document/9913068" class="hover:underline">
-                                    An Integrated Framework for Autonomous Sensor Placement With Aerial Robots
-                                    </a>
-                                </h4>
-                                <p class="text-sm text-gray-600 mb-2">B. Stephens*, H. Nguyen*, S. Hamaza and M. Kovac (*co-first)</p>
-                                <p class="text-sm text-gray-600 mb-2">IEEE/ASME Transactions on Mechatronics (TMech), 2023</p>
-                                <p class="text-gray-600"> 162 flight experiments shows the proposed framework's ability to autonomously place sensors within 10cm of the target with a success rate of 93.8% and 95% confidence interval of (89%, 97%), thus confirming the robustness of the proposed approach. </p>
-                                
-                                <div class="flex flex-wrap gap-2 mb-4">
-                                    <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">TMECH</span>
-                                    <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Scimago Q1</span>
-                                    <span class="bg-green-100 text-blue-800 text-xs px-2 py-1 rounded">
-                                        <a href="https://pure.tudelft.nl/ws/portalfiles/portal/148732618/An_Integrated_Framework_for_Autonomous_Sensor_Placement_With_Aerial_Robots.pdf" class="text-blue-800 font-medium hover:underline">
-                                            Preprint
-                                        </a>
-                                    </span>
-                                    <span class="bg-yellow-100 text-blue-800 text-xs px-2 py-1 rounded">
-                                        <a href="https://www.youtube.com/watch?v=4R8DhVpEbSQ" class="text-blue-800 font-medium hover:underline">
-                                            Video
-                                        </a>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Publication 3 -->
-                    <div class="p-6 hover:bg-blue-50 transition-all">
-                        <div class="flex items-start">
-                            <div class="bg-blue-100 text-blue-800 p-3 rounded-lg mr-4">
-                                <i class="fas fa-file-alt"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-blue-800 mb-1">
-                                    <a href="https://ieeexplore.ieee.org/document/8294249" class="hover:underline">
-                                        A Novel Robotic Platform for Aerial Manipulation Using Quadrotors as Rotating Thrust Generators
-                                    </a>
-                                </h4>
-                                <p class="text-sm text-gray-600 mb-2">H. Nguyen, S. Park, J. Park and D. J. Lee</p>
-                                <p class="text-sm text-gray-600 mb-2">IEEE Transactions on Robotics (TRO), 2018</p>
-                                <p class="text-gray-600"> Development of a novel aerial robotic platform for physical interactions, which consists of a rigid frame and multiple quadrotors that are connected to the frame via passive spherical joints and act as distributed rotating thrust generators to collectively propel the frame by adjusting their attitude and thrust force.</p>
-                                
-                                <div class="flex flex-wrap gap-2 mb-4">
-                                    <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">TRO</span>
-                                    <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Scimago Q1</span>
-                                    <span class="bg-green-100 text-blue-800 text-xs px-2 py-1 rounded">
-                                        <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8294249" class="text-blue-800 font-medium hover:underline">
-                                            Open Access
-                                        </a>
-                                    </span>
-                                    <span class="bg-yellow-100 text-blue-800 text-xs px-2 py-1 rounded">
-                                        <a href="https://www.youtube.com/watch?v=v9NVUoCRyBY&t=83s" class="text-blue-800 font-medium hover:underline">
-                                            Video
-                                        </a>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                   
-                </div>
-            </div>
-            
-            <div class="text-center">
-                <a href="https://academics.rmit.edu.au/hainguyen-nguyen/publications" class="inline-flex items-center bg-blue-800 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-all">
-                    View All Publications <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
+        <div style="font-size: 17px; font-weight: 700; margin-bottom: 3px;">Hai Bui</div>
+        <div style="font-size: 13px; color: #2b66d9; font-weight: 600; margin-bottom: 6px;">PhD Student with T. Le</div>
+        <div style="font-size: 14px; color: #5a6776; line-height: 1.5;">Hybrid Control Approaches</div>
+      </div>
+      <div style="text-align: left;">
+        <div style="aspect-ratio: 1; border-radius: 12px; border: 1px solid #dde4ee; overflow: hidden; margin-bottom: 14px;">
+          <img src="assets/photos/long.jpeg" alt="Ba-Long Tran" style="width: 100%; height: 100%; object-fit: cover; display: block;">
         </div>
-    </section>
-
-
-    <!-- Footer -->
-    <footer class="bg-blue-900 text-blue-300 py-8">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-4 md:mb-0">
-                    <div class="text-xl font-bold text-white mb-2">Hai-Nguyen (Hann) Nguyen</div>
-                    <p class="text-sm">Robotics & Mechatronics Engineering</p>
-                    <!-- <p class="text-sm">School of Science, Engineering and Technology</p> -->
-                    <p class="text-sm">RMIT University, South Saigon Campus, Vietnam</p>
-                </div>
-                <div class="text-sm">
-                    &copy; 2025 All rights reserved.
-                </div>
-            </div>
+        <div style="font-size: 17px; font-weight: 700; margin-bottom: 3px;">Ba-Long Tran</div>
+        <div style="font-size: 13px; color: #2b66d9; font-weight: 600; margin-bottom: 6px;">PhD Student with T. Le &amp; A. Nguyen</div>
+        <div style="font-size: 14px; color: #5a6776; line-height: 1.5;">Aerial &amp; Legged Manipulation</div>
+      </div>
+      <div style="text-align: left;">
+        <div style="aspect-ratio: 1; border-radius: 12px; border: 1px solid #dde4ee; background: repeating-linear-gradient(135deg, #eef2f8 0 10px, #e7edf6 10px 20px); display: flex; align-items: flex-end; justify-content: center; padding: 12px; margin-bottom: 14px;">
+          <span style="font-family: ui-monospace, Menlo, monospace; font-size: 11px; color: #8a94a3; background: rgba(255,255,255,0.7); padding: 4px 9px; border-radius: 5px;">new students</span>
         </div>
-    </footer>
+        <div style="font-size: 17px; font-weight: 700; margin-bottom: 3px;">New Students</div>
+        <div style="font-size: 13px; color: #2b66d9; font-weight: 600; margin-bottom: 6px;">Recruiting</div>
+        <div style="font-size: 14px; color: #5a6776; line-height: 1.5;">PhD. in AI &amp; Robotics</div>
+      </div>
+    </div>
 
-    <script>
-        // Mobile menu toggle
-        document.getElementById('menu-toggle').addEventListener('click', function() {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        });
+    <!-- Robots -->
+    <h3 style="font-size: 16px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: #36414f; margin: 0 0 24px;">Robots</h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 22px;">
+      <div style="background: #fff; border: 1px solid #e6ebf2; border-radius: 14px; overflow: hidden;">
+        <div style="aspect-ratio: 4 / 3;">
+          <img src="assets/photos/drones.png" alt="Drones" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+        <div style="padding: 20px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+            <span style="font-size: 18px; font-weight: 700;">Drones</span>
+          </div>
+          <p style="font-size: 14px; color: #5a6776; line-height: 1.5; margin: 0;">Quadrotors (x4) &amp; Omnirotors (x2)</p>
+        </div>
+      </div>
+      <div style="background: #fff; border: 1px solid #e6ebf2; border-radius: 14px; overflow: hidden;">
+        <div style="aspect-ratio: 4 / 3;">
+          <img src="assets/photos/humanoids.png" alt="Humanoids" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+        <div style="padding: 20px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+            <span style="font-size: 18px; font-weight: 700;">Humanoids</span>
+          </div>
+          <p style="font-size: 14px; color: #5a6776; line-height: 1.5; margin: 0;">Unitree R1 &amp; HighTorque Mini</p>
+        </div>
+      </div>
+      <div style="background: #fff; border: 1px solid #e6ebf2; border-radius: 14px; overflow: hidden;">
+        <div style="aspect-ratio: 4 / 3;">
+          <img src="assets/photos/manipulators.jpg" alt="Manipulators" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+        <div style="padding: 20px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+            <span style="font-size: 18px; font-weight: 700;">Manipulators</span>
+          </div>
+          <p style="font-size: 14px; color: #5a6776; line-height: 1.5; margin: 0;">ABB YuMi &amp; GoFa (x2)</p>
+        </div>
+      </div>
+      <div style="background: #fff; border: 1px solid #e6ebf2; border-radius: 14px; overflow: hidden;">
+        <div style="aspect-ratio: 4 / 3; background: repeating-linear-gradient(135deg, #e9eef7 0 10px, #e2e9f4 10px 20px); display: flex; align-items: flex-end; justify-content: center; padding: 12px;">
+          <span style="font-family: ui-monospace, Menlo, monospace; font-size: 11px; color: #8a94a3; background: rgba(255,255,255,0.7); padding: 4px 9px; border-radius: 5px;">new robots</span>
+        </div>
+        <div style="padding: 20px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+            <span style="font-size: 18px; font-weight: 700;">New Robots</span>
+          </div>
+          <p style="font-size: 14px; color: #5a6776; line-height: 1.5; margin: 0;">Building</p>
+        </div>
+      </div>
+    </div>
 
-        // Smooth scrolling for all links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                if (targetElement) {
-                    targetElement.scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                    
-                    // Close mobile menu if open
-                    const mobileMenu = document.getElementById('mobile-menu');
-                    if (!mobileMenu.classList.contains('hidden')) {
-                        mobileMenu.classList.add('hidden');
-                    }
-                }
-            });
-        });
+  </section>
 
-        // Add shadow to navbar on scroll
-        window.addEventListener('scroll', function() {
-            const nav = document.querySelector('nav');
-            if (window.scrollY > 10) {
-                nav.classList.add('shadow-lg');
-            } else {
-                nav.classList.remove('shadow-lg');
-            }
-        });
-    </script>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications" style="max-width: 1120px; margin: 0 auto; padding: clamp(36px, 8vw, 60px) clamp(18px, 5vw, 44px); border-top: 1px solid #e6ebf2;">
+    <div style="display: flex; align-items: baseline; gap: 18px; margin-bottom: 14px;">
+      <span style="font-family: ui-monospace, Menlo, monospace; font-size: 13px; color: #9aa4b2; font-weight: 600;">03</span>
+      <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #2b66d9;">Publications</span>
+    </div>
+    <h2 style="font-size: clamp(26px, 6vw, 36px); font-weight: 700; letter-spacing: -0.02em; margin: 0 0 18px;">Publications</h2>
+
+    <h3 style="font-size: 16px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: #36414f; margin: 0 0 24px;">Demos</h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 22px; margin-bottom: 48px;">
+      <div style="background: #fff; border: 1px solid #e6ebf2; border-radius: 14px; overflow: hidden;">
+        <div style="position: relative; width: 100%; padding-bottom: 56.25%;">
+          <iframe src="https://www.youtube.com/embed/NcGy41yxVtI?si=d5TjGRSH59kTeIWx" title="Leveraging Physical Interactions" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; display: block;"></iframe>
+        </div>
+        <div style="padding: 20px;">
+          <span style="font-size: 16px; font-weight: 700;">Leveraging Physical Interactions</span>
+        </div>
+      </div>
+      <div style="background: #fff; border: 1px solid #e6ebf2; border-radius: 14px; overflow: hidden;">
+        <div style="position: relative; width: 100%; padding-bottom: 56.25%;">
+          <iframe src="https://www.youtube.com/embed/v9NVUoCRyBY?si=1WEL-VEd3ZBBbQ5a" title="Novel Aerial Platform for Physical Interactions" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; display: block;"></iframe>
+        </div>
+        <div style="padding: 20px;">
+          <span style="font-size: 16px; font-weight: 700;">Novel Aerial Platform for Physical Interactions</span>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="font-size: 16px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: #36414f; margin: 0 0 24px;">Papers</h3>
+    <div style="display: flex; flex-direction: column;">
+
+      <div style="display: grid; grid-template-columns: minmax(56px, 90px) 1fr; gap: clamp(14px, 4vw, 28px); padding: 30px 0; border-top: 1px solid #e6ebf2;">
+        <span style="font-family: ui-monospace, Menlo, monospace; font-size: 15px; color: #2b66d9; font-weight: 700;">2026</span>
+        <div>
+          <div style="font-size: 19px; font-weight: 700; line-height: 1.4; margin-bottom: 8px;">AeroScene: Progressive Scene Synthesis for Aerial Robotics</div>
+          <div style="font-size: 15px; color: #5a6776; margin-bottom: 4px;">N. Huu*, Tuong Do*, V. Tran, B. Nguyen, H. Nguyen, E. Tjiputra, Q. Tran, H. Nguyen, A. Nguyen</div>
+          <div style="font-size: 14px; color: #8a94a3; font-style: italic; margin-bottom: 16px;">IEEE International Conference on Robotics and Automation (ICRA), 2026</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <span style="font-size: 12px; font-weight: 700; color: #2b66d9; background: #edf2fd; padding: 6px 12px; border-radius: 20px;">CORE A*</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: minmax(56px, 90px) 1fr; gap: clamp(14px, 4vw, 28px); padding: 30px 0; border-top: 1px solid #e6ebf2;">
+        <span style="font-family: ui-monospace, Menlo, monospace; font-size: 15px; color: #2b66d9; font-weight: 700;">2025</span>
+        <div>
+          <div style="font-size: 19px; font-weight: 700; line-height: 1.4; margin-bottom: 8px;">Reinforcement Learning-Based Online Estimation of the Inductances of the Permanent Magnet Synchronous Machines</div>
+          <div style="font-size: 15px; color: #5a6776; margin-bottom: 4px;">M. X. Bui, H. Nguyen, I. Nutkani, N. Fernando, R. Dutta, and M. F. Rahman</div>
+          <div style="font-size: 14px; color: #8a94a3; font-style: italic; margin-bottom: 16px;">IEEE Transactions on Instrumentation and Measurement (TIM), 2025</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <span style="font-size: 12px; font-weight: 700; color: #2b66d9; background: #edf2fd; padding: 6px 12px; border-radius: 20px;">Scimago Q1</span>
+            <a href="https://doi.org/10.1109/TIM.2025.3604136" target="_blank" rel="noopener" style="text-decoration: none; font-size: 12px; font-weight: 700; color: #5a6776; border: 1px solid #dde4ee; padding: 6px 12px; border-radius: 20px;">DOI</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: minmax(56px, 90px) 1fr; gap: clamp(14px, 4vw, 28px); padding: 30px 0; border-top: 1px solid #e6ebf2;">
+        <span style="font-family: ui-monospace, Menlo, monospace; font-size: 15px; color: #2b66d9; font-weight: 700;">2025</span>
+        <div>
+          <div style="font-size: 19px; font-weight: 700; line-height: 1.4; margin-bottom: 8px;">A Linear Complementarity based MPC for Aerial Physical Interaction</div>
+          <div style="font-size: 15px; color: #5a6776; margin-bottom: 4px;">R. Fuser, H. Nguyen, G. Incremona, M. Farina, and M. Cognetti</div>
+          <div style="font-size: 14px; color: #8a94a3; font-style: italic; margin-bottom: 16px;">International Conference on Unmanned Aircraft Systems (ICUAS), 2025</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <a href="https://doi.org/10.1109/ICUAS65942.2025.11007833" target="_blank" rel="noopener" style="text-decoration: none; font-size: 12px; font-weight: 700; color: #5a6776; border: 1px solid #dde4ee; padding: 6px 12px; border-radius: 20px;">DOI</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: minmax(56px, 90px) 1fr; gap: clamp(14px, 4vw, 28px); padding: 30px 0; border-top: 1px solid #e6ebf2;">
+        <span style="font-family: ui-monospace, Menlo, monospace; font-size: 15px; color: #2b66d9; font-weight: 700;">2024</span>
+        <div>
+          <div style="font-size: 19px; font-weight: 700; line-height: 1.4; margin-bottom: 8px;">Sequential Trajectory Optimization for Externally-Actuated Modular Manipulators with Joint Locking</div>
+          <div style="font-size: 15px; color: #5a6776; margin-bottom: 4px;">J. Choe, J. Lee, H. Yang, H. Nguyen†, and D. J. Lee† <span style="color: #9aa4b2;">(†co-corresponding)</span></div>
+          <div style="font-size: 14px; color: #8a94a3; font-style: italic; margin-bottom: 16px;">IEEE International Conference on Robotics and Automation (ICRA), 2024</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <span style="font-size: 12px; font-weight: 700; color: #2b66d9; background: #edf2fd; padding: 6px 12px; border-radius: 20px;">CORE A*</span>
+            <span style="font-size: 12px; font-weight: 700; color: #c73c0e; background: #edf2fd; padding: 6px 12px; border-radius: 20px;">Best UAV-Finalist</span>
+            <a href="https://doi.org/10.1109/ICRA57147.2024.10611268" target="_blank" rel="noopener" style="text-decoration: none; font-size: 12px; font-weight: 700; color: #5a6776; border: 1px solid #dde4ee; padding: 6px 12px; border-radius: 20px;">DOI</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: minmax(56px, 90px) 1fr; gap: clamp(14px, 4vw, 28px); padding: 30px 0; border-top: 1px solid #e6ebf2;">
+        <span style="font-family: ui-monospace, Menlo, monospace; font-size: 15px; color: #2b66d9; font-weight: 700;">2024</span>
+        <div>
+          <div style="font-size: 19px; font-weight: 700; line-height: 1.4; margin-bottom: 8px;">Hand Tracking: Survey</div>
+          <div style="font-size: 15px; color: #5a6776; margin-bottom: 4px;">J. Heo, H. Choi, Y. Lee, H. Kim, H. Ji, H. Park, Y. Lee, C. Jung, H. Nguyen, and D. J. Lee</div>
+          <div style="font-size: 14px; color: #8a94a3; font-style: italic; margin-bottom: 16px;">International Journal of Control, Automation and Systems (IJCAS), 2024</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <a href="https://doi.org/10.1007/S12555-024-0298-1" target="_blank" rel="noopener" style="text-decoration: none; font-size: 12px; font-weight: 700; color: #5a6776; border: 1px solid #dde4ee; padding: 6px 12px; border-radius: 20px;">DOI</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: minmax(56px, 90px) 1fr; gap: clamp(14px, 4vw, 28px); padding: 30px 0; border-top: 1px solid #e6ebf2;">
+        <span style="font-family: ui-monospace, Menlo, monospace; font-size: 15px; color: #2b66d9; font-weight: 700;">2023</span>
+        <div>
+          <div style="font-size: 19px; font-weight: 700; line-height: 1.4; margin-bottom: 8px;">Learning Tethered Perching for Aerial Robots</div>
+          <div style="font-size: 15px; color: #5a6776; margin-bottom: 4px;">F. Hauf, B. B. Kocer, A. Slatter, H. Nguyen, O. Pang, R. Clark, E. Johns, and M. Kovac</div>
+          <div style="font-size: 14px; color: #8a94a3; font-style: italic; margin-bottom: 16px;">IEEE International Conference on Robotics and Automation (ICRA), 2023</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <span style="font-size: 12px; font-weight: 700; color: #2b66d9; background: #edf2fd; padding: 6px 12px; border-radius: 20px;">CORE A*</span>
+            <a href="https://doi.org/10.1109/ICRA48891.2023.10161135" target="_blank" rel="noopener" style="text-decoration: none; font-size: 12px; font-weight: 700; color: #5a6776; border: 1px solid #dde4ee; padding: 6px 12px; border-radius: 20px;">DOI</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: minmax(56px, 90px) 1fr; gap: clamp(14px, 4vw, 28px); padding: 30px 0; border-top: 1px solid #e6ebf2;">
+        <span style="font-family: ui-monospace, Menlo, monospace; font-size: 15px; color: #2b66d9; font-weight: 700;">2023</span>
+        <div>
+          <div style="font-size: 19px; font-weight: 700; line-height: 1.4; margin-bottom: 8px;">An Integrated Framework for Autonomous Sensor Placement with Aerial Robots</div>
+          <div style="font-size: 15px; color: #5a6776; margin-bottom: 4px;">B. Stephens*, H. Nguyen*, S. Hamaza, and M. Kovac <span style="color: #9aa4b2;">(*co-first)</span></div>
+          <div style="font-size: 14px; color: #8a94a3; font-style: italic; margin-bottom: 16px;">IEEE/ASME Transactions on Mechatronics (TMech), 2023</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <span style="font-size: 12px; font-weight: 700; color: #2b66d9; background: #edf2fd; padding: 6px 12px; border-radius: 20px;">Scimago D1</span>
+            <a href="https://doi.org/10.1109/TMECH.2022.3202116" target="_blank" rel="noopener" style="text-decoration: none; font-size: 12px; font-weight: 700; color: #5a6776; border: 1px solid #dde4ee; padding: 6px 12px; border-radius: 20px;">DOI</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: minmax(56px, 90px) 1fr; gap: clamp(14px, 4vw, 28px); padding: 30px 0; border-top: 1px solid #e6ebf2;">
+        <span style="font-family: ui-monospace, Menlo, monospace; font-size: 15px; color: #2b66d9; font-weight: 700;">2022</span>
+        <div>
+          <div style="font-size: 19px; font-weight: 700; line-height: 1.4; margin-bottom: 8px;">An Aerial Parallel Manipulator with Shared Compliance</div>
+          <div style="font-size: 15px; color: #5a6776; margin-bottom: 4px;">B. Stephens, L. Orr, B. B. Kocer, H. Nguyen, and M. Kovac</div>
+          <div style="font-size: 14px; color: #8a94a3; font-style: italic; margin-bottom: 16px;">IEEE Robotics and Automation Letters (RA-L), 2022</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <span style="font-size: 12px; font-weight: 700; color: #2b66d9; background: #edf2fd; padding: 6px 12px; border-radius: 20px;">Scimago Q1</span>
+            <a href="https://doi.org/10.1109/LRA.2022.3205111" target="_blank" rel="noopener" style="text-decoration: none; font-size: 12px; font-weight: 700; color: #5a6776; border: 1px solid #dde4ee; padding: 6px 12px; border-radius: 20px;">DOI</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: minmax(56px, 90px) 1fr; gap: clamp(14px, 4vw, 28px); padding: 30px 0; border-top: 1px solid #e6ebf2;">
+        <span style="font-family: ui-monospace, Menlo, monospace; font-size: 15px; color: #2b66d9; font-weight: 700;">2020</span>
+        <div>
+          <div style="font-size: 19px; font-weight: 700; line-height: 1.4; margin-bottom: 8px;">Robots in the Danger Zone</div>
+          <div style="font-size: 15px; color: #5a6776; margin-bottom: 4px;">D. A. Robb, M. I. Ahmad, C. Tiseo, <span style="color: #9aa4b2;">et al.</span></div>
+          <div style="font-size: 14px; color: #8a94a3; font-style: italic; margin-bottom: 16px;">ACM/IEEE International Conference on Human-Robot Interaction (HRI), 2020</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <span style="font-size: 12px; font-weight: 700; color: #2b66d9; background: #edf2fd; padding: 6px 12px; border-radius: 20px;">CORE A*</span>
+            <a href="https://doi.org/10.1145/3319502.3374789" target="_blank" rel="noopener" style="text-decoration: none; font-size: 12px; font-weight: 700; color: #5a6776; border: 1px solid #dde4ee; padding: 6px 12px; border-radius: 20px;">DOI</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: minmax(56px, 90px) 1fr; gap: clamp(14px, 4vw, 28px); padding: 30px 0; border-top: 1px solid #e6ebf2;">
+        <span style="font-family: ui-monospace, Menlo, monospace; font-size: 15px; color: #2b66d9; font-weight: 700;">2019</span>
+        <div>
+          <div style="font-size: 19px; font-weight: 700; line-height: 1.4; margin-bottom: 8px;">A Passively Adaptive Microspine Grapple for Robust, Controllable Perching</div>
+          <div style="font-size: 15px; color: #5a6776; margin-bottom: 4px;">H. Nguyen, R. Siddall, B. Stephens, and M. Kovac</div>
+          <div style="font-size: 14px; color: #8a94a3; font-style: italic; margin-bottom: 16px;">IEEE International Conference on Soft Robotics (RoboSoft), 2019</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <a href="https://doi.org/10.1109/ROBOSOFT.2019.8722779" target="_blank" rel="noopener" style="text-decoration: none; font-size: 12px; font-weight: 700; color: #5a6776; border: 1px solid #dde4ee; padding: 6px 12px; border-radius: 20px;">DOI</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: minmax(56px, 90px) 1fr; gap: clamp(14px, 4vw, 28px); padding: 30px 0; border-top: 1px solid #e6ebf2;">
+        <span style="font-family: ui-monospace, Menlo, monospace; font-size: 15px; color: #2b66d9; font-weight: 700;">2018</span>
+        <div>
+          <div style="font-size: 19px; font-weight: 700; line-height: 1.4; margin-bottom: 8px;">A Novel Robotic Platform for Aerial Manipulation Using Quadrotors as Rotating Thrust Generators</div>
+          <div style="font-size: 15px; color: #5a6776; margin-bottom: 4px;">H. Nguyen, S. Park, J. Park, and D. J. Lee</div>
+          <div style="font-size: 14px; color: #8a94a3; font-style: italic; margin-bottom: 16px;">IEEE Transactions on Robotics (T-RO), 2018</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <span style="font-size: 12px; font-weight: 700; color: #2b66d9; background: #edf2fd; padding: 6px 12px; border-radius: 20px;">Scimago D1</span>
+            <a href="https://doi.org/10.1109/TRO.2018.2791604" target="_blank" rel="noopener" style="text-decoration: none; font-size: 12px; font-weight: 700; color: #5a6776; border: 1px solid #dde4ee; padding: 6px 12px; border-radius: 20px;">DOI</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: minmax(56px, 90px) 1fr; gap: clamp(14px, 4vw, 28px); padding: 30px 0; border-top: 1px solid #e6ebf2;">
+        <span style="font-family: ui-monospace, Menlo, monospace; font-size: 15px; color: #2b66d9; font-weight: 700;">2017</span>
+        <div>
+          <div style="font-size: 19px; font-weight: 700; line-height: 1.4; margin-bottom: 8px;">Positioning Control of an Underwater Robot with Tilting Thrusters via Decomposition of Thrust Vector</div>
+          <div style="font-size: 15px; color: #5a6776; margin-bottom: 4px;">J. Bak, H. Nguyen, S. Park, D. J. Lee, T. Seo, S. Jin, and J. Kim</div>
+          <div style="font-size: 14px; color: #8a94a3; font-style: italic; margin-bottom: 16px;">International Journal of Control, Automation and Systems (IJCAS), 2017</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <a href="https://doi.org/10.1007/S12555-016-0298-X" target="_blank" rel="noopener" style="text-decoration: none; font-size: 12px; font-weight: 700; color: #5a6776; border: 1px solid #dde4ee; padding: 6px 12px; border-radius: 20px;">DOI</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: minmax(56px, 90px) 1fr; gap: clamp(14px, 4vw, 28px); padding: 30px 0; border-top: 1px solid #e6ebf2;">
+        <span style="font-family: ui-monospace, Menlo, monospace; font-size: 15px; color: #2b66d9; font-weight: 700;">2015</span>
+        <div>
+          <div style="font-size: 19px; font-weight: 700; line-height: 1.4; margin-bottom: 8px;">Mechanics, Control and Internal Dynamics of Quadrotor Tool Operation</div>
+          <div style="font-size: 15px; color: #5a6776; margin-bottom: 4px;">H. Nguyen, C. Ha, and D. Lee</div>
+          <div style="font-size: 14px; color: #8a94a3; font-style: italic; margin-bottom: 16px;">Automatica, 2015</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <span style="font-size: 12px; font-weight: 700; color: #2b66d9; background: #edf2fd; padding: 6px 12px; border-radius: 20px;">Scimago D1</span>
+            <a href="https://doi.org/10.1016/J.AUTOMATICA.2015.08.015" target="_blank" rel="noopener" style="text-decoration: none; font-size: 12px; font-weight: 700; color: #5a6776; border: 1px solid #dde4ee; padding: 6px 12px; border-radius: 20px;">DOI</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: minmax(56px, 90px) 1fr; gap: clamp(14px, 4vw, 28px); padding: 30px 0; border-top: 1px solid #e6ebf2;">
+        <span style="font-family: ui-monospace, Menlo, monospace; font-size: 15px; color: #2b66d9; font-weight: 700;">2015</span>
+        <div>
+          <div style="font-size: 19px; font-weight: 700; line-height: 1.4; margin-bottom: 8px;">Preliminary Control Design on Spherically-Connected Multiple-Quadrotor Manipulator System</div>
+          <div style="font-size: 15px; color: #5a6776; margin-bottom: 4px;">J. Kim, H. Nguyen, and D. Lee</div>
+          <div style="font-size: 14px; color: #8a94a3; font-style: italic; margin-bottom: 16px;">International Conference on Ubiquitous Robots and Ambient Intelligence (URAI), 2015</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <a href="https://doi.org/10.1109/URAI.2015.7358871" target="_blank" rel="noopener" style="text-decoration: none; font-size: 12px; font-weight: 700; color: #5a6776; border: 1px solid #dde4ee; padding: 6px 12px; border-radius: 20px;">DOI</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: minmax(56px, 90px) 1fr; gap: clamp(14px, 4vw, 28px); padding: 30px 0; border-top: 1px solid #e6ebf2;">
+        <span style="font-family: ui-monospace, Menlo, monospace; font-size: 15px; color: #2b66d9; font-weight: 700;">2015</span>
+        <div>
+          <div style="font-size: 19px; font-weight: 700; line-height: 1.4; margin-bottom: 8px;">Aerial Tool Operation System Using Quadrotors as Rotating Thrust Generators</div>
+          <div style="font-size: 15px; color: #5a6776; margin-bottom: 4px;">H. Nguyen, S. Park, and D. Lee</div>
+          <div style="font-size: 14px; color: #8a94a3; font-style: italic; margin-bottom: 16px;">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2015</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <span style="font-size: 12px; font-weight: 700; color: #2b66d9; background: #edf2fd; padding: 6px 12px; border-radius: 20px;">CORE A</span>
+            <a href="https://doi.org/10.1109/IROS.2015.7353534" target="_blank" rel="noopener" style="text-decoration: none; font-size: 12px; font-weight: 700; color: #5a6776; border: 1px solid #dde4ee; padding: 6px 12px; border-radius: 20px;">DOI</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: minmax(56px, 90px) 1fr; gap: clamp(14px, 4vw, 28px); padding: 30px 0; border-top: 1px solid #e6ebf2;">
+        <span style="font-family: ui-monospace, Menlo, monospace; font-size: 15px; color: #2b66d9; font-weight: 700;">2013</span>
+        <div>
+          <div style="font-size: 19px; font-weight: 700; line-height: 1.4; margin-bottom: 8px;">Hybrid Force/Motion Control and Internal Dynamics of Quadrotors for Tool Operation</div>
+          <div style="font-size: 15px; color: #5a6776; margin-bottom: 4px;">H. Nguyen and D. Lee</div>
+          <div style="font-size: 14px; color: #8a94a3; font-style: italic; margin-bottom: 16px;">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2013</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <span style="font-size: 12px; font-weight: 700; color: #2b66d9; background: #edf2fd; padding: 6px 12px; border-radius: 20px;">CORE A</span>
+            <a href="https://doi.org/10.1109/IROS.2013.6696849" target="_blank" rel="noopener" style="text-decoration: none; font-size: 12px; font-weight: 700; color: #5a6776; border: 1px solid #dde4ee; padding: 6px 12px; border-radius: 20px;">DOI</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: minmax(56px, 90px) 1fr; gap: clamp(14px, 4vw, 28px); padding: 30px 0; border-top: 1px solid #e6ebf2; border-bottom: 1px solid #e6ebf2;">
+        <span style="font-family: ui-monospace, Menlo, monospace; font-size: 15px; color: #2b66d9; font-weight: 700;">2013</span>
+        <div>
+          <div style="font-size: 19px; font-weight: 700; line-height: 1.4; margin-bottom: 8px;">Coordinated Rotation Control of Multiple Rigid Bodies in SO(3)</div>
+          <div style="font-size: 15px; color: #5a6776; margin-bottom: 4px;">H. Nguyen and D. Lee</div>
+          <div style="font-size: 14px; color: #8a94a3; font-style: italic; margin-bottom: 16px;">International Conference on Control, Automation and Systems (ICCAS), 2013</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <a href="https://doi.org/10.1109/ICCAS.2013.6704201" target="_blank" rel="noopener" style="text-decoration: none; font-size: 12px; font-weight: 700; color: #5a6776; border: 1px solid #dde4ee; padding: 6px 12px; border-radius: 20px;">DOI</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</div>
 </body>
 </html>
